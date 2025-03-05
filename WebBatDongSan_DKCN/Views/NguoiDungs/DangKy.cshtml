@@ -1,0 +1,96 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.NguoiDungsViewModel
+@{
+    ViewData["Title"] = "Trang Đăng Ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Bắt Đầu Đăng Ký Tài Khoản -->
+<div class="contact-section">
+    <div class="container-fluid">
+        <div class="row login-box">
+            <div class="col-lg-6 align-self-center pad-0 form-section">
+                <!--------------------------------------------------------------------------------------------------->
+                <div class="form-inner">
+                    <a href="dang-ky" class="logos">
+                      @*   <img src="#" alt="logo"> *@
+                    </a>
+                    <h3>Tạo Tài Khoản Mới</h3>  
+                    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.ErrorMessage
+                        </div>
+                    }
+                    <form asp-action="DangKy" asp-controller="NguoiDungs" method="POST">
+                        <div class="form-group form-box">
+                            <input class="form-control" asp-for="DangKy.HoTen" id="HoTen" type="HoTen" class="form-control" placeholder="Họ và Tên"  />
+                            <span asp-validation-for="DangKy.HoTen" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-box">       
+                            <input class="form-control" asp-for="DangKy.Email" id="Email" type="Email" class="form-control" placeholder="Địa chỉ Email" />
+                            <span asp-validation-for="DangKy.Email" class="text-danger"></span>
+                            <i class="flaticon-mail-2"></i>
+                        </div>
+                        <div class="form-group form-box">           
+                            <input class="form-control" asp-for="DangKy.Sdt" id="Sdt" type="Sdt" class="form-control" placeholder="Số điện thoại" />
+                            <span asp-validation-for="DangKy.Sdt" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-box">
+                            <input class="form-control" asp-for="DangKy.TenTruyCap" id="TenTruyCap" type="TenTruyCap" class="form-control" placeholder="Tên đăng nhập" />
+                            <span asp-validation-for="DangKy.TenTruyCap" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-box">
+                            <input class="form-control" asp-for="DangKy.MatKhau" id="password" type="password" placeholder="Mật khẩu" />
+                            <span asp-validation-for="DangKy.MatKhau" class="text-danger"></span>
+                            <i class="flaticon-password"></i>
+                        </div>
+                        <div class="form-group form-box">
+                            <input type="password" class="form-control" id="confirmPassword"
+                                   placeholder="Nhập lại mật khẩu" required
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                   title="Mật khẩu phải có ít nhất 8 ký tự, bao gồm ít nhất một chữ số, một chữ thường và một chữ hoa."
+                                   oninput="checkPasswordMatch(this);" />
+                            <div id="passwordMatchMessage"></div>
+                        </div>
+                        <div class="form-group form-box">
+                            <select asp-for="SelectedLoaiTaiKhoanId" class="form-control">
+                                <option value="">Chọn loại tài khoản</option>
+                                @foreach (var loaiTaiKhoan in Model.LoaiTaiKhoanUsers)
+                                {
+                                    <option value="@loaiTaiKhoan.IdLoaitk">@loaiTaiKhoan.TenLoaitk</option>
+                                }
+                            </select>
+                            <span asp-validation-for="SelectedLoaiTaiKhoanId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-4 btn-block">Đăng Ký</button>
+                        </div>
+                    </form>
+                    <div class="clearfix"></div>
+                    <p>Đã có tài khoản? <a href="dang-nhap" class="thembo"> Đăng nhập tại đây</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 bg-color-15 pad-0 none-992 bg-img">
+                <div class="info clearfix">
+                    <h1>Chào mừng bạn đến với <a href="/">DanKhanh</a></h1>
+                    <p>"Xây dựng website Bất động Sản D&K", chúng tôi cam kết tạo ra một nền tảng trải nghiệm tốt nhất cho người dùng từ tìm kiếm đến giao dịch. Hy vọng D&K trở thành điểm đến hàng đầu cho mọi người khi nói đến mua bán bất động sản trực tuyến. Hãy cùng chúng tôi xây dựng và phát triển nơi giấc mơ về ngôi nhà hoàn hảo trở thành hiện thực!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        function checkPasswordMatch(input) {
+            var passwordInput = document.getElementById('password');
+            var confirmPasswordInput = input;
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                confirmPasswordInput.setCustomValidity('Mật khẩu không khớp');
+            } else {
+                confirmPasswordInput.setCustomValidity('');
+            }
+        }
+    </script>
+}

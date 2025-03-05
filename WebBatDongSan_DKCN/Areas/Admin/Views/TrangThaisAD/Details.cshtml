@@ -1,0 +1,55 @@
+﻿@model WebBatDongSan_DKCN.Models.TrangThai
+
+@{
+    ViewData["Title"] = "Chi Tiết Trạng Thái";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Chi Tiết Trạng Thái</h2>
+                <p class="pageheader-text">
+                    Thông tin chi tiết trạng thái trong hệ thống.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Trạng Thái</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Trạng Thái</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Trạng Thái</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tên Trạng Thái -->
+                        <dt class="col-sm-3">Tên Trạng Thái:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenTrangthai)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdTrangthai" class="btn btn-primary">Sửa Trạng Thái</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

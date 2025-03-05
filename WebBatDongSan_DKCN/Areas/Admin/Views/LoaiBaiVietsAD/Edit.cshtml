@@ -1,0 +1,67 @@
+﻿@model WebBatDongSan_DKCN.Models.LoaiBaiViet
+
+@{
+    ViewData["Title"] = "Sửa Loại Bài Viết";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Sửa Loại Bài Viết</h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Loại Bài Viết</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sửa Loại Bài Viết</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Chỉnh sửa Loại Bài Viết</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <!-- Hidden field to store the ID -->
+                        <input type="hidden" asp-for="IdLoaibaiviet" />
+
+                        <!-- Tên Loại Bài Viết -->
+                        <div class="form-group row">
+                            <label asp-for="Tenloaibaiviet" class="col-12 col-sm-3 col-form-label text-sm-right">
+                                Tên Loại Bài Viết
+                            </label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <input asp-for="Tenloaibaiviet" class="form-control" placeholder="Nhập tên loại bài viết" />
+                                <span asp-validation-for="Tenloaibaiviet" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Nút Thao Tác -->
+                        <div class="form-group row text-right">
+                            <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                                <button type="submit" class="btn btn-primary">Lưu</button>
+                                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

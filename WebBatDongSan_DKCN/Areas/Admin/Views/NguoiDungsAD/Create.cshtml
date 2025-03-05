@@ -1,0 +1,91 @@
+﻿@model WebBatDongSan_DKCN.Models.NguoiDung
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Thêm Tài Khoản </h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Loại Tài Khoản</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Thêm Tài Khoản</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thêm Loại Tài Khoản</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="TenTruyCap" class="control-label"></label>
+                            <input asp-for="TenTruyCap" class="form-control" />
+                            <span asp-validation-for="TenTruyCap" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MatKhau" class="control-label"></label>
+                            <input asp-for="MatKhau" class="form-control" />
+                            <span asp-validation-for="MatKhau" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="HoTen" class="control-label"></label>
+                            <input asp-for="HoTen" class="form-control" />
+                            <span asp-validation-for="HoTen" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Sdt" class="control-label"></label>
+                            <input asp-for="Sdt" class="form-control" />
+                            <span asp-validation-for="Sdt" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LoaiTaiKhoanId" class="control-label"></label>
+                            <select asp-for="LoaiTaiKhoanId" class="form-control" asp-items="ViewBag.LoaiTaiKhoanId"></select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NgayDangky" class="control-label"></label>
+                            <input asp-for="NgayDangky" class="form-control" />
+                            <span asp-validation-for="NgayDangky" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SoTien" class="control-label"></label>
+                            <input asp-for="SoTien" class="form-control" />
+                            <span asp-validation-for="SoTien" class="text-danger"></span>
+                        </div>
+                        <!-- Nút Thao Tác -->
+                        <div class="form-group row text-right">
+                            <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                                <button type="submit" class="btn btn-space btn-primary">Thêm Loại Tài Khoản</button>
+                                <a asp-action="Index" class="btn btn-space btn-secondary">Quay lại danh sách</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

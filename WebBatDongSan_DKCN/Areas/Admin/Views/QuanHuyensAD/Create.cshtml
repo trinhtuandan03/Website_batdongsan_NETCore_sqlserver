@@ -1,0 +1,50 @@
+﻿@model WebBatDongSan_DKCN.Models.QuanHuyen
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="card">
+        <h2 class="card-header">Thêm Quận Huyện</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Quận Huyện</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Thêm Quận Huyện</li>
+        </ol>
+        <div class="card-body">
+            <form asp-action="Create" id="validationform" data-parsley-validate="" novalidate="">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Tên Quận Huyện -->
+                <div class="form-group row">
+                    <label asp-for="TenQuanhuyen" class="col-12 col-sm-3 col-form-label text-sm-right">Tên Quận Huyện</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="TenQuanhuyen" class="form-control" placeholder="Nhập tên quận huyện" />
+                        <span asp-validation-for="TenQuanhuyen" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Tỉnh Thành -->
+                <div class="form-group row">
+                    <label asp-for="IdTinhthanh" class="col-12 col-sm-3 col-form-label text-sm-right">Tỉnh Thành</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <select asp-for="IdTinhthanh" class="form-control" asp-items="ViewBag.IdTinhthanh"></select>
+                        <span asp-validation-for="IdTinhthanh" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Nút Thao Tác -->
+                <div class="form-group row text-right">
+                    <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                        <button type="submit" class="btn btn-space btn-primary">Thêm Quận Huyện</button>
+                        <a asp-action="Index" class="btn btn-space btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

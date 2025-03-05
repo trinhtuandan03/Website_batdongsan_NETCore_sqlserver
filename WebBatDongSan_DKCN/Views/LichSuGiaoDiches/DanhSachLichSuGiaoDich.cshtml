@@ -1,0 +1,77 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.LichSuGiaoDichesViewModels
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Trang Lịch Sử Giao Dịch</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Trang Lịch Sử Giao Dịch</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="contact-2 content-area-2">
+    <div class="container">
+        <div class="table-section mb-50">
+            <h3 class="heading-3">
+                @if (TempData["ThongBao"] != null)
+                {
+                    <span>@TempData["ThongBao"]</span>
+                }
+                else
+                {
+                    <h3 class="heading-3">Lịch Sử Giao Dịch Thêm Sản Phẩm/Bài Viết Của Người Dùng</h3>
+                }
+            </h3>
+            <table class="table table-bordered mb-0">
+                <thead class="bg-active">
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Loại Giao Dịch</th>
+                        <th scope="col">Số Tiền</th>
+                        <th scope="col">Thời Gian Giao Dịch</th>
+                        <th scope="col">Bài Viết/Sản Phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.LichSuGiaoDiches != null && Model.LichSuGiaoDiches.Any())
+                    {
+                        int index = 1;
+                        foreach (var gd in Model.LichSuGiaoDiches)
+                        {
+                            <tr>
+                                <td>@index</td>
+                                <td>@gd.LoaiGiaoDich</td>
+                                <td>@string.Format("{0:C}", gd.SoTien)</td>
+                                <td>@gd.ThoiGianGiaoDich?.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    @if (gd.IdBaiviet != null)
+                                    {
+                                        <span>Bài Viết ID: @gd.IdBaiviet</span>
+                                    }
+                                    else if (gd.IdSanpham != null)
+                                    {
+                                        <span>Sản Phẩm ID: @gd.IdSanpham</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Không xác định</span>
+                                    }
+                                </td>
+                            </tr>
+                            index++;
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center">Không có lịch sử giao dịch nào được tìm thấy.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

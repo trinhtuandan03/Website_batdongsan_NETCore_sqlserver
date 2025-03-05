@@ -1,0 +1,42 @@
+﻿@model WebBatDongSan_DKCN.Models.TrangThai
+
+@{
+    ViewData["Title"] = "Thêm Trạng Thái";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="card">
+        <h2 class="card-header">Thêm Trạng Thái</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Trạng Thái</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Thêm Trạng Thái</li>
+        </ol>
+        <div class="card-body">
+            <form asp-action="Create" id="validationform" data-parsley-validate="" novalidate="">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Tên Trạng Thái -->
+                <div class="form-group row">
+                    <label asp-for="TenTrangthai" class="col-12 col-sm-3 col-form-label text-sm-right">Tên Trạng Thái</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="TenTrangthai" class="form-control" placeholder="Nhập tên trạng thái" />
+                        <span asp-validation-for="TenTrangthai" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Nút Thao Tác -->
+                <div class="form-group row text-right">
+                    <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                        <button type="submit" class="btn btn-space btn-primary">Thêm Trạng Thái</button>
+                        <a asp-action="Index" class="btn btn-space btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

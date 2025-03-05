@@ -1,0 +1,203 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.SanPhamsViewModel
+@{
+    ViewData["Title"] = "Trang Danh Sách Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1> Tất Cả Các Sản Phẩm</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Tất Cả Các Sản Phẩm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bắt đầu vùng Tìm kiếm -->
+<div class="search-area" id="search-area-1">
+    <div class="container">
+        <div class="search-area-inner">
+            <div class="search-contents ">
+                <form asp-action="SanPham" asp-controller="SanPham" method="GET">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="area">
+                                    <option>------ Loại Bất Động Sản ------</option>
+                                    @foreach (var loaibatdongsan in Model.loaiBds)
+                                    {
+                                        <option value="@loaibatdongsan.IdLoaibds">@loaibatdongsan.TenLoaibds</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="property-status">
+                                    <option>------ Loại Giấy Tờ ------</option>
+                                    @foreach (var loaiTaiLieu in Model.giayToTaiLieus)
+                                    {
+                                        <option value="@loaiTaiLieu.IdGiaytoTailieu">@loaiTaiLieu.TenGiaytoTailieu</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="location">
+                                    <option>------ Loại Tin ------</option>
+                                    @foreach (var loaiTin in Model.loaiTins)
+                                    {
+                                        <option value="@loaiTin.IdLoaitin">@loaiTin.TenLoaitin</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="category">
+                                    <option>------ Tỉnh/Thành ------</option>
+                                    @foreach (var tinhthanh in Model.tinhThanhs)
+                                    {
+                                        <option value="@tinhthanh.IdTinhthanh">@tinhthanh.TenTinhthanh</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="bedrooms">
+                                    <option>------ Quận/Huyện ------</option>
+                                    @foreach (var quanhuyen in Model.quanHuyens)
+                                    {
+                                        <option value="@quanhuyen.IdQuanhuyen">@quanhuyen.TenQuanhuyen</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="bathrooms">
+                                    <option>------ Phường/Xã ------</option>
+                                    @foreach (var phuongxa in Model.phuongXas)
+                                    {
+                                        <option value="@phuongxa.IdPhuongxa">@phuongxa.TenPhuongxa</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="bathrooms">
+                                    <option>------ Diện tích -----</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <button class="btn btn-4 btn-block" type="submit">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Properties list fullwidth start -->
+<div class="properties-list-fullwidth content-area-2">
+    <div class="container">
+        <div class="option-bar">
+            <div class="row clearfix">
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-5 col-3">
+                    <h4>
+                        <span class="heading-icon">
+                            <i class="fa fa-caret-right icon-design"></i>
+                            <i class="fa fa-th-large"></i>
+                        </span>
+                        <span class="heading">Danh Sách Sản Phẩm</span>
+                    </h4>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-7 col-sm-7 col-9">
+                    <div class="sorting-options clearfix">
+                        <a href="properties-list-fullwidth.html" class="change-view-btn"><i class="fa fa-th-list"></i></a>
+                        <a href="properties-grid-fullwidth.html" class="change-view-btn active-view-btn"><i class="fa fa-th-large"></i></a>
+                    </div>
+                    <div class="search-area">
+                        <select class="selectpicker search-fields" name="location">
+                            <option>Giá cao đến thấp</option>
+                            <option>Giá thấp đến cao</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitle">
+            Có @Model.SanPhams.Count() Kết Quả
+        </div>
+        <div class="row">
+            @foreach (var sanPham in Model.SanPhams)
+            {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="property-box-4">
+                        <div class="thumbnail_inner">
+                            <div class="thumbnail">
+                                <img src="~/images/sanpham/@sanPham.Img1" alt="@sanPham.TieuDeSanpham">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="inner">
+                                <div class="portfolio_heading">
+                                    <h4 class="title">
+                                        <a href="@Url.Action("ChiTietSanPham", "SanPhams", new { id = sanPham.IdSanpham })">@sanPham.TieuDeSanpham</a>
+                                    </h4>
+                                    <div class="category_list">
+                                        <a href="properties-details.html">
+                                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps">Địa chỉ: @sanPham.DiaChi</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio_hover">
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <i class="flaticon-bed">Diện tích: @sanPham.DienTich</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-bath">Loại BĐS: @sanPham.IdLoaibds</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-square-layouting-with-black-square-in-east-area">Ngày đăng: @sanPham.NgayDang?.ToString("dd/MM/yyyy")</i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="transparent_link" href="Chi-Tiet-San-Pham"></a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="pagination-box text-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">«</span></a></li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link " href="#">2</a></li>
+                    <li class="page-item"><a class="page-link " href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Properties list fullwidth end -->

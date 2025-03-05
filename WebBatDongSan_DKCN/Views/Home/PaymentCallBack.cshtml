@@ -1,0 +1,38 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Thông tin thanh toán";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Thông tin thanh toán thành công</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Thông tin thanh toán thành công</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (Model != null && Model.PhanHoiNapTienMomos != null && Model.PhanHoiNapTienMomos.Any())
+    {
+        <div class="alert alert-success">
+            <h1>Thông tin thanh toán thành công</h1 >
+            <p><strong>Order ID:</strong> @Model.OrderId</p>
+            <p><strong>Thông tin đơn hàng:</strong> @Model.OrderInfo</p>
+            <p><strong>Số tiền:</strong> @Model.Amount</p>
+            <p><strong>Thời gian tạo đơn hàng:</strong> @Model.CreatedAt</p>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            <h4>Thanh toán không thành công hoặc thiếu thông tin.</h4>
+        </div>
+    }
+</div>

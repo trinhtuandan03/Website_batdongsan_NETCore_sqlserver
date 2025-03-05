@@ -1,0 +1,227 @@
+﻿@model IEnumerable<WebBatDongSan_DKCN.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- wrapper  -->
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h1 class="pageheader-title">Danh Sách Sản Phẩm </h1>
+                <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#" class="breadcrumb-link">
+                                    Quản Lý Bài Viết
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh Sách Sản Phẩm</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TieuDeSanpham)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MoTaSanpham)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GiaSanPham)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DienTich)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayDang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chieungang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chieudai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoLau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoPhongNgu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhongAn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NhaBep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SanThuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChoDeXeHoi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdDuongphoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdGiaytoTailieuNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdLoaibdsNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdLoaitinNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPhuonghuongNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPhuongxaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdQuanhuyenNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTinhthanhNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTrangthaiNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUserNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TieuDeSanpham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTaSanpham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaSanPham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DienTich)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Img1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Img2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Img3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Img4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Img5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chieungang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chieudai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoPhongNgu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhongAn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhaBep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SanThuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChoDeXeHoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdDuongphoNavigation.IdDuongpho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdGiaytoTailieuNavigation.IdGiaytoTailieu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdLoaibdsNavigation.IdLoaibds)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdLoaitinNavigation.IdLoaitin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPhuonghuongNavigation.IdPhuonghuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPhuongxaNavigation.IdPhuongxa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdQuanhuyenNavigation.IdQuanhuyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTinhthanhNavigation.IdTinhthanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTrangthaiNavigation.IdTrangthai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUserNavigation.IdUser)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdSanpham">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdSanpham">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdSanpham">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

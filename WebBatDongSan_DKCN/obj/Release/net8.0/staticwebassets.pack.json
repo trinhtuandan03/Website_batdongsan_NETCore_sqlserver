@@ -1,0 +1,1605 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\WebBatDongSan_DKCN.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebBatDongSan_DKCN.lbwpabkf90.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\images\\down-arrow.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\down-arrow.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\images\\drag-indicator.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\drag-indicator.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\libs\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\libs\\css\\style.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\charts\\chartist-bundle\\chartist.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\charts\\chartist-bundle\\chartist.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Black.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Black.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BlackItalic.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BlackItalic.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Bold.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Bold.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BoldItalic.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Book.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Book.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BookItalic.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-BookItalic.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Medium.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-Medium.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-MediumItalic.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\CircularStd-MediumItalic.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\circular-std\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\circular-std\\style.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\admin\\assets\\vendor\\fonts\\fontawesome\\css\\fontawesome-all.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\fontawesome\\css\\fontawesome-all.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\animate.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\dropzone.css",
+      "PackagePath": "staticwebassets\\css\\dropzone.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\images\\layers-2x.png",
+      "PackagePath": "staticwebassets\\css\\images\\layers-2x.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\images\\layers.png",
+      "PackagePath": "staticwebassets\\css\\images\\layers.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\jquery.mCustomScrollbar.css",
+      "PackagePath": "staticwebassets\\css\\jquery.mCustomScrollbar.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\jquery.selectBox.css",
+      "PackagePath": "staticwebassets\\css\\jquery.selectBox.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\leaflet.css",
+      "PackagePath": "staticwebassets\\css\\leaflet.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\mCSB_buttons.png",
+      "PackagePath": "staticwebassets\\css\\mCSB_buttons.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\rangeslider.css",
+      "PackagePath": "staticwebassets\\css\\rangeslider.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\skins\\default.css",
+      "PackagePath": "staticwebassets\\css\\skins\\default.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\css\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\slick.css",
+      "PackagePath": "staticwebassets\\css\\slick.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticond41d.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\slick\\slick.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick\\slick.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\slick\\slick.svg",
+      "PackagePath": "staticwebassets\\fonts\\slick\\slick.svg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\slick\\slick.ttf",
+      "PackagePath": "staticwebassets\\fonts\\slick\\slick.ttf"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\slick\\slick.woff",
+      "PackagePath": "staticwebassets\\fonts\\slick\\slick.woff"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\fonts\\slick\\slickd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick\\slickd41d.eot"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\images\\spritemap.png",
+      "PackagePath": "staticwebassets\\images\\spritemap.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\images\\spritemap@2x.png",
+      "PackagePath": "staticwebassets\\images\\spritemap@2x.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\img\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-13.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-13.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar-8.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\avatar\\avatar.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\banner\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\img-7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\big-logo.png",
+      "PackagePath": "staticwebassets\\img\\big-logo.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\blog\\blog.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\brands\\brand-1.png",
+      "PackagePath": "staticwebassets\\img\\brands\\brand-1.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\brands\\brand-2.png",
+      "PackagePath": "staticwebassets\\img\\brands\\brand-2.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\brands\\brand-3.png",
+      "PackagePath": "staticwebassets\\img\\brands\\brand-3.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\brands\\brand-4.png",
+      "PackagePath": "staticwebassets\\img\\brands\\brand-4.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\brands\\brand-5.png",
+      "PackagePath": "staticwebassets\\img\\brands\\brand-5.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\contact.jpg",
+      "PackagePath": "staticwebassets\\img\\contact.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\floor-plans.png",
+      "PackagePath": "staticwebassets\\img\\floor-plans.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\footer-2.jpg",
+      "PackagePath": "staticwebassets\\img\\footer-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\footer-left.png",
+      "PackagePath": "staticwebassets\\img\\footer-left.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\footer.jpg",
+      "PackagePath": "staticwebassets\\img\\footer.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\img-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\img-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\img-7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-8.jpg",
+      "PackagePath": "staticwebassets\\img\\img-8.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\img-9.jpg",
+      "PackagePath": "staticwebassets\\img\\img-9.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\loader.gif",
+      "PackagePath": "staticwebassets\\img\\loader.gif"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\logos\\black-logo.png",
+      "PackagePath": "staticwebassets\\img\\logos\\black-logo.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\logos\\logo-white.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-white.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\logos\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\popular-places\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\popular-places\\img-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\pricing-1.png",
+      "PackagePath": "staticwebassets\\img\\pricing-1.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\pricing-2.png",
+      "PackagePath": "staticwebassets\\img\\pricing-2.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\pricing-3.png",
+      "PackagePath": "staticwebassets\\img\\pricing-3.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 10.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 10.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 11.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 11.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 12.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 12.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 13.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 13.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 14.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 14.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 15.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 15.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 16.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 16.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 17.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 17.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 18.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 18.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 19.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 19.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 20.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 20.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 21.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 21.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 22.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 22.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 23.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 23.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 24.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 24.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 25.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 25.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 26.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 26.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 27.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 27.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 28.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 28.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 29.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 29.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 30.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 30.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 31.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 31.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 32.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 32.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 33.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 33.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 34.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 34.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 35.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 35.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 36.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 36.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 37.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 37.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 38.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 38.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 39.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 39.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 40.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 40.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 41.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 41.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 42.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 42.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 43.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 43.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 44.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 44.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 45.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 45.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 46.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 46.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 47.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 47.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 48.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 48.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 49.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 49.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 50.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 50.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 51.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 51.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 52.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 52.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 53.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 53.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 54.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 54.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 55.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 55.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 56.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 56.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 57.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 57.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 58.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 58.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 59.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 59.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 60.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 60.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 61.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 61.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 62.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 62.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 63.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 63.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 64.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 64.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 65.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 65.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 66.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 66.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 67.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 67.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 68.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 68.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 69.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 69.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 70.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 70.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 71.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 71.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 72.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 72.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 73.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 73.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 74.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 74.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 75.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 75.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 76.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 76.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 77.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 77.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 78.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 78.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 79.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 79.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 80.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 80.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 81.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 81.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 82.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 82.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 83.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 83.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 84.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 84.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 85.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 85.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 86.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 86.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\Nhapho 87.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\Nhapho 87.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-10.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-10.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-11.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-11.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-12.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-12.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-13.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-13.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-14.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-14.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-15.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-15.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-16.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-16.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-17.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-17.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-18.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-18.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-19.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-19.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-20.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-20.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-8.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-8.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\img-9.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-9.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 1.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 2.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 3.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 4.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 5.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 6.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 7.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 8.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 8.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\property\\nhapho 9.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\nhapho 9.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 10.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 10.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 11.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 11.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 12.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 12.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 13.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 13.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 14.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 14.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 15.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 15.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 16.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 16.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 17.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 17.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 18.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 18.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 19.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 19.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 20.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 20.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 21.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 21.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 22.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 22.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 23.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 23.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 24.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 24.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 25.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 25.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 26.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 26.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 27.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 27.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 28.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 28.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 29.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 29.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 30.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 30.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 31.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 31.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 32.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 32.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 33.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 33.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 34.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 34.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 35.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 35.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 36.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 36.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 37.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 37.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 38.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 38.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 39.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 39.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 40.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 40.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 41.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 41.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 42.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 42.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 43.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 43.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 44.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 44.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 45.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 45.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 46.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 46.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 47.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 47.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 48.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 48.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 49.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 49.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 50.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 50.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 51.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 51.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 52.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 52.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 53.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 53.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 54.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 54.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 55.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 55.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 56.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 56.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 57.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 57.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 58.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 58.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 59.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 59.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 60.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 60.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 61.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 61.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 62.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 62.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 63.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 63.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 64.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 64.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 65.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 65.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 66.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 66.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 67.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 67.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 68.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 68.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 69.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 69.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 70.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 70.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 71.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 71.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 72.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 72.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 73.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 73.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 74.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 74.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 75.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 75.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 76.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 76.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 77.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 77.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 78.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 78.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 79.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 79.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 80.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 80.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 81.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 81.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 82.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 82.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 83.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 83.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 84.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 84.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 85.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 85.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 86.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 86.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\Nhapho 87.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\Nhapho 87.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 1.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 2.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 3.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 4.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 5.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 6.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 7.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 7.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 8.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 8.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sanpham\\nhapho 9.jpg",
+      "PackagePath": "staticwebassets\\img\\sanpham\\nhapho 9.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\service-photo\\service-2.jpg",
+      "PackagePath": "staticwebassets\\img\\service-photo\\service-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\service-photo\\service-3.jpg",
+      "PackagePath": "staticwebassets\\img\\service-photo\\service-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\service-photo\\service.jpg",
+      "PackagePath": "staticwebassets\\img\\service-photo\\service.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\shop\\shop-1.jpg",
+      "PackagePath": "staticwebassets\\img\\shop\\shop-1.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\shop\\shop-2.jpg",
+      "PackagePath": "staticwebassets\\img\\shop\\shop-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\shop\\shop-3.jpg",
+      "PackagePath": "staticwebassets\\img\\shop\\shop-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\shop\\shop-4.jpg",
+      "PackagePath": "staticwebassets\\img\\shop\\shop-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\shop\\shop-5.jpg",
+      "PackagePath": "staticwebassets\\img\\shop\\shop-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property-2.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property-2.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property-3.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property-3.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property-4.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property-4.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property-5.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property-5.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property-6.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property-6.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\sub-property\\sub-property.jpg",
+      "PackagePath": "staticwebassets\\img\\sub-property\\sub-property.jpg"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\img\\vs.png",
+      "PackagePath": "staticwebassets\\img\\vs.png"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\backstretch.js",
+      "PackagePath": "staticwebassets\\js\\backstretch.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\dropzone.js",
+      "PackagePath": "staticwebassets\\js\\dropzone.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\ie-emulation-modes-warning.js",
+      "PackagePath": "staticwebassets\\js\\ie-emulation-modes-warning.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery-2.2.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.2.0.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.countdown.js",
+      "PackagePath": "staticwebassets\\js\\jquery.countdown.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.filterizr.js",
+      "PackagePath": "staticwebassets\\js\\jquery.filterizr.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.mb.YTPlayer.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mb.YTPlayer.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.scrollUp.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\jquery.selectBox.js",
+      "PackagePath": "staticwebassets\\js\\jquery.selectBox.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\leaflet-providers.js",
+      "PackagePath": "staticwebassets\\js\\leaflet-providers.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\leaflet.js",
+      "PackagePath": "staticwebassets\\js\\leaflet.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\leaflet.markercluster.js",
+      "PackagePath": "staticwebassets\\js\\leaflet.markercluster.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\maps.js",
+      "PackagePath": "staticwebassets\\js\\maps.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\particles.min.js",
+      "PackagePath": "staticwebassets\\js\\particles.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\rangeslider.js",
+      "PackagePath": "staticwebassets\\js\\rangeslider.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\js\\slick.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\typed.min.js",
+      "PackagePath": "staticwebassets\\js\\typed.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DaiHocHutechKhoa2021\\DoAnChuyenNganhCNTT\\WebBatDongSan_DKCN\\WebBatDongSan_DKCN\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.WebBatDongSan_DKCN.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.WebBatDongSan_DKCN.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.WebBatDongSan_DKCN.props",
+      "PackagePath": "build\\WebBatDongSan_DKCN.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebBatDongSan_DKCN.props",
+      "PackagePath": "buildMultiTargeting\\WebBatDongSan_DKCN.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebBatDongSan_DKCN.props",
+      "PackagePath": "buildTransitive\\WebBatDongSan_DKCN.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

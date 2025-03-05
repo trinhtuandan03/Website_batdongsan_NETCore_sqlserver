@@ -1,0 +1,63 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    var postUrl = "tich-hop-thanh-toan-momo-voi-asp-net-core-7d5e4hP";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Nạp Tiền Momo</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Nạp Tiền Momo</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="agent content-area-2">
+    <div class="container">
+        <div class="row">
+                <h1 class="display-4">Nạp Tiền Momo Vào Tài Khoản với .NET Core, C# | Đan - Khanh</h1>    
+                <div class="container">
+                    <form method="POST" asp-action="CreatePaymentUrl" asp-controller="Home">
+                        <div class="form-group">
+                            <label for="FullName">Tên khách hàng</label>
+                            <input class="form-control"
+                                   id="FullName"
+                                   name="FullName"
+                                   type="text"
+                               value="@Model.FullName">
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="Amount">Số tiền</label>
+                            <input class="form-control"
+                                   id="Amount"
+                                   name="Amount"
+                                   type="text"
+                                   value="10000">
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="OrderInfo">Nội dung thanh toán</label>
+                            <textarea class="form-control"
+                                      cols="20"
+                                      id="OrderInfo"
+                                      name="OrderInfo"
+                                      rows="2">Thanh toán tại Web Bất Động Sản DK</textarea>
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Thanh toán (Checkout)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $(document).ready(function () {
+
+    });
+</script>

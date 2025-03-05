@@ -1,0 +1,521 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.SanPhamsViewModel
+@{
+    ViewData["Title"] = "Trang Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Trang Chi Tiết Sản Phẩm</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Trang Chi Tiết Sản Phẩm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Properties details page start -->
+<div class="properties-details-page content-area-2">
+    @foreach (var sanPham in Model.SanPhams)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="propertiesDetailsSlider" class="carousel properties-details-sliders slide mb-61">
+                        <div class="heading-properties-2">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="informeson">
+                                        <div class="title">
+                                            <h1>@sanPham.TieuDeSanpham</h1>
+                                            <h5>Ngày Đăng: <span>@sanPham.NgayDang?.ToString("dd/MM/yyyy")</span></h5>
+                                        </div>
+                                        <div>
+                                            <div class="float-left">
+                                                <ul class="clearfix">
+                                                    @sanPham.MoTaSanpham
+                                                </ul>
+                                            </div>
+                                            <div class="float-left">
+                                                <div class="property-details mb-45">
+                                                    <h3 class="heading-3">Các thông tin khác</h3>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <li>
+                                                                <i class="flaticon-bed">Người Đăng: @sanPham.IdUserNavigation.HoTen</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bath">Phòng Ăn: @sanPham.PhongAn</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bed">Nhà Bếp: @sanPham.NhaBep</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bath">Sân Thượng: @sanPham.SanThuong</i>
+                                                            </li>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <li>
+                                                                <i class="flaticon-bed">Chiều Dài: @sanPham.Chieudai</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bath">Chiều Ngang: @sanPham.Chieungang</i>
+                                                            </li>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <li>
+                                                                <i class="flaticon-bed">Chỗ Để Xe: @sanPham.ChoDeXeHoi</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bath">Địa Chỉ: @sanPham.DiaChi</i>
+                                                            </li>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <li>
+                                                                <i class="flaticon-bed">Diện tích: @sanPham.DienTich</i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="flaticon-bath">Loại BĐS: @sanPham.IdLoaibdsNavigation.TenLoaibds</i>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- các mục băng chuyền thanh trượt chính -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="~/images/sanpham/@sanPham.Img1" class="img-fluid" alt="properties-photo">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="~/images/sanpham/@sanPham.Img2" class="img-fluid" alt="properties-photo">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="~/images/sanpham/@sanPham.Img3" class="img-fluid" alt="properties-photo">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="3">
+                                <img src="~/images/sanpham/@sanPham.Img4" class="img-fluid" alt="properties-photo">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="4">
+                                <img src="~/images/sanpham/@sanPham.Img5" class="img-fluid" alt="properties-photo">
+                            </div>
+                            <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="carousel-control right" href="#propertiesDetailsSlider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <!-- điều khiển điều hướng băng chuyền thanh trượt chính -->
+                        <ul class="carousel-indicators sp-2 smail-properties list-inline nav nav-justified ">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
+                                    <img src="~/images/sanpham/@sanPham.Img1" class="img-fluid" alt="properties-photo-smale">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
+                                    <img src="~/images/sanpham/@sanPham.Img2" class="img-fluid" alt="properties-photo-smale">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
+                                    <img src="~/images/sanpham/@sanPham.Img3" class="img-fluid" alt="properties-photo-smale">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
+                                    <img src="~/images/sanpham/@sanPham.Img4" class="img-fluid" alt="properties-photo-smale">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
+                                    <img src="~/images/sanpham/@sanPham.Img5" class="img-fluid" alt="properties-photo-smale">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-12 slider">
+                    <div class="property-description mb-60">
+                        <h3 class="heading-3">Thông tin sản phẩm: </h3>
+                        <p>@sanPham.MoTaSanpham</p>
+                    </div>
+                    <!-- Property details start -->
+                    <div class="property-details mb-45">
+                        <h3 class="heading-3">Các thông tin khác</h3>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-bed">Giấy Tờ - Tài liệu: @sanPham.IdGiaytoTailieuNavigation.TenGiaytoTailieu</i>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-bath">Loại Tin: @sanPham.IdLoaitinNavigation.TenLoaitin</i>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-square-layouting-with-black-square-in-east-area">Ngày đăng: @sanPham.NgayDang?.ToString("dd/MM/yyyy")</i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-bed">Phương Hướng: @sanPham.IdPhuonghuongNavigation.TenPhuonghuong</i>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-bath">Tỉnh Thành: @sanPham.IdTinhthanhNavigation.TenTinhthanh</i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-bed">Quận Huyện: @sanPham.IdQuanhuyenNavigation.TenQuanhuyen</i>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-bath">Phường Xã: @sanPham.IdPhuongxaNavigation.TenPhuongxa</i>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-bath">Đường Phố: @sanPham.IdDuongphoNavigation.TenDuongpho</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related properties start -->
+                    <div class="related-properties hedin-mb-30">
+                        <!-- Phần bình luận bắt đầu -->
+                        <div class="comments-section mb-60">
+                            <h3 class="heading-3">Bình Luận Sản Phẩm</h3>
+                            @if (!Model.BinhLuans.Any())
+                            {
+                                <p>Chưa có bình luận nào. Hãy là người đầu tiên bình luận!</p>
+                            }
+                            else
+                            {
+                                <ul class="comments">
+                                    <!-- Danh Sách Hiển thị các bình luận cha -->
+                                    @foreach (var binhLuanCha in Model.BinhLuans.Where(c => c.BinhLuanChaId == null))
+                                    {
+                                        <li>
+                                            <div class="comment">
+                                                <div class="comment-author">
+                                                    <a href="#">
+                                                        <img src="~/img/avatar/avatar-13.jpg" alt="user-avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="comment-meta">
+                                                        <div class="comment-meta-author">
+                                                            Người dùng: @binhLuanCha.IdUser
+                                                        </div>
+                                                        <div class="comment-meta-reply">
+                                                            <!-- Nút Phản hồi để Người dùng nào đó muốn Phản Hồi Bình Luận cha -->
+                                                            <a href="#" class="toggle-reply-form" data-id="@binhLuanCha.IdBinhluan">Trả Lời Bình Luận Cha </a>
+                                                        </div>
+                                                        <div class="comment-meta-date">
+                                                            <span>@binhLuanCha.NgayTao?.ToString("hh:mm tt dd/MM/yyyy")</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="comment-body">
+                                                        <p>@binhLuanCha.NoiDung</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Danh Sách Hiển thị các bình luận Con -->
+                                            <ul>
+                                                @foreach (var binhLuanCon in Model.BinhLuans.Where(r => r.BinhLuanChaId == binhLuanCha.IdBinhluan))
+                                                {
+                                                    <li>
+                                                        <div class="comment">
+                                                            <div class="comment-author">
+                                                                <a href="#">
+                                                                    <img src="~/img/avatar/avatar-13.jpg" alt="user-avatar">
+                                                                </a>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-meta">
+                                                                    <div class="comment-meta-author">
+                                                                        Người dùng: @binhLuanCon.IdUser
+                                                                    </div>
+                                                                    <div class="comment-meta-reply">
+                                                                        <!-- Nút Phản hồi để Người dùng nào đó muốn Phản Hồi Bình Luận -->
+                                                                        <a href="#" class="toggle-reply-form" data-id="@binhLuanCon.IdBinhluan">Trả Lời Bình Luận Con</a>
+                                                                    </div>
+                                                                    <div class="comment-meta-date">
+                                                                        <cite>@binhLuanCon.NgayTao?.ToString("hh:mm tt dd/MM/yyyy")</cite>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                                <div class="comment-body">
+                                                                    <p>@binhLuanCon.NoiDung</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Form thêm phản hồi trả Lời và  Hiển thị lên Danh Sách Bình luận Con -->
+                                                        <div id="reply-form-con-@binhLuanCon.IdBinhluan" style="display: none;">
+                                                            <form method="post" asp-action="LuuBinhLuan">
+                                                                <input type="hidden" name="idSanPham" value="@sanPham.IdSanpham" />
+                                                                <input type="hidden" name="idBinhLuanCha" value="@binhLuanCha.IdBinhluan" />
+                                                                <textarea name="noiDung" class="form-control" placeholder="Nhập trả lời..." required></textarea>
+                                                                <button type="submit" class="btn btn-primary mt-2">Gửi trả Lời</button>
+                                                            </form>
+                                                        </div>
+                                                    </li>
+                                                }
+                                            </ul>
+                                            <!-- Form thêm phản hồi trả Lời và  Hiển thị lên Danh Sách Bình luận Cha -->
+                                            <div class="reply-form mt-3" id="reply-form-@binhLuanCha.IdBinhluan" style="display: none;">
+                                                <form method="post" asp-action="LuuBinhLuan">
+                                                    <input type="hidden" name="idSanPham" value="@sanPham.IdSanpham" />
+                                                    <input type="hidden" name="idBinhLuanCha" value="@binhLuanCha.IdBinhluan" />
+                                                    <textarea name="noiDung" class="form-control" placeholder="Nhập trả lời..." required></textarea>
+                                                    <button type="submit" class="btn btn-primary mt-2">Gửi trả Lời</button>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                            <!-- Form thêm bình luận mới Gốc -->
+                            <div class="comment-form mt-4">
+                                <h4>Thêm Bình Luận</h4>
+                                <form method="post" asp-action="LuuBinhLuan">
+                                    <input type="hidden" name="idSanPham" value="@sanPham.IdSanpham" />
+                                    <textarea name="noiDung" class="form-control" placeholder="Nhập bình luận của bạn..." required></textarea>
+                                    <button type="submit" class="btn btn-success mt-2">Gửi Bình Luận</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--  Phần bình luận kết thúc  -->
+                        <h3 class="heading-3">Sản Phẩm Tương Tự</h3>
+                        <div class="row">
+                            @foreach (var RelatedSanPhams in Model.SanPhams)
+                            {
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="property-box-4">
+                                        <div class="thumbnail_inner">
+                                            <div class="thumbnail">
+                                                <img src="~/images/sanpham/@sanPham.Img1" alt="@sanPham.TieuDeSanpham">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="inner">
+                                                <div class="portfolio_heading">
+                                                    <h4 class="title">
+                                                        <a href="@Url.Action("ChiTietSanPham", "SanPhams", new { id = sanPham.IdSanpham })">@sanPham.TieuDeSanpham</a>
+                                                    </h4>
+                                                    <div class="category_list">
+                                                        <a href="properties-details.html">
+                                                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps">Địa chỉ: @sanPham.DiaChi</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio_hover">
+                                                    <ul class="facilities-list clearfix">
+                                                        <li>
+                                                            <i class="flaticon-bed">Diện tích: @sanPham.DienTich</i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="flaticon-bath">Loại BĐS: @sanPham.IdLoaibds</i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="flaticon-square-layouting-with-black-square-in-east-area">Ngày đăng: @sanPham.NgayDang?.ToString("dd/MM/yyyy")</i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="transparent_link" href="Chi-Tiet-San-Pham"></a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="sidebar mbl">
+                        <!-- Search area start -->
+                        <div class="widget search-area advanced-search as">
+                            <div class='content'>
+                                <h1>@sanPham.IdUserNavigation?.HoTen</h1>
+                                <div>(Hãy liên hệ với chúng tôi)</div>
+                                <div class='fone'> <a >@Model.Sdt</a></div>
+                                <div class='introduce'></div>
+                            </div>
+                        </div>
+                        <div class="widget search-area advanced-search as">
+                            <h5 class="sidebar-title">Tìm kiếm Nhà Đất</h5>
+                            <div class="search-area-inner">
+                                <div class="search-contents ">
+                                    <form method="GET">
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="area">
+                                                <option>------ Loại Bất Động Sản ------</option>
+                                                @foreach (var loaibatdongsan in Model.loaiBds)
+                                                {
+                                                    <option value="@loaibatdongsan.IdLoaibds">@loaibatdongsan.TenLoaibds</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>------ Loại Giấy Tờ ------</option>
+                                                @foreach (var loaigiayto in Model.giayToTaiLieus)
+                                                {
+                                                    <option value="@loaigiayto.IdGiaytoTailieu">@loaigiayto.TenGiaytoTailieu</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="Location">
+                                                <option>------ Loại Tin ------</option>
+                                                @foreach (var loaiTin in Model.loaiTins)
+                                                {
+                                                    <option value="@loaiTin.IdLoaitin">@loaiTin.TenLoaitin</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="types">
+                                                <option>------ Tỉnh/Thành ------</option>
+                                                @foreach (var tinhthanh in Model.tinhThanhs)
+                                                {
+                                                    <option value="@tinhthanh.IdTinhthanh">@tinhthanh.TenTinhthanh</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="bedrooms">
+                                                <option>------ Quận/Huyện ------</option>
+                                                @foreach (var quanhuyen in Model.quanHuyens)
+                                                {
+                                                    <option value="@quanhuyen.IdQuanhuyen">@quanhuyen.TenQuanhuyen</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="selectpicker search-fields" name="bedrooms">
+                                                <option>------ Phường/Xã ------</option>
+                                                @foreach (var phuongxa in Model.phuongXas)
+                                                {
+                                                    <option value="@phuongxa.IdPhuongxa">@phuongxa.TenPhuongxa</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-30">
+                                            <select class="selectpicker search-fields" name="bedrooms">
+                                                <option>------ Diện tích -----</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn btn-4 btn-block">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories start -->
+                        <div class="widget categories">
+                            <h5 class="sidebar-title">Bán nhà trong hẻm tại Hồ Chí Minh </h5>
+                            <ul>
+                                <li><a href="#">Bán nhà Quận 1<span>(12)</span></a></li>
+                                <li><a href="#">Bán nhà Quận 2<span>(8)</span></a></li>
+                                <li><a href="#">Bán nhà Quận 3 Houses<span>(23)</span></a></li>
+                                <li><a href="#">Bán nhà Quận 4<span>(5)</span></a></li>
+                                <li><a href="#">Bán nhà Quận 5<span>(63)</span></a></li>
+                                <li><a href="#">Bán nhà Quận 6<span>(7)</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- Recent posts start -->
+                        <div class="widget recent-posts">
+                            <h5 class="sidebar-title">Những Sản Phẩm Gần Đây</h5>
+                            @foreach (var RelatedSanPhams in Model.SanPhams)
+                            {
+                                <div class="media mb-4">
+                                    <a href="properties-details.html">
+                                        <img src="~/img/sanpham/@sanPham.Img1" alt="sub-property">
+                                    </a>
+                                    <div class="media-body align-self-center">
+                                        <h5>
+                                            <a href="properties-details.html">@sanPham.TieuDeSanpham</a>
+                                        </h5>
+                                        <p> @sanPham.NgayDang?.ToString("dd/MM/yyyy") | @sanPham.GiaSanPham VND</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <!-- Social list start -->
+                        <div class="social-list widget clearfix">
+                            <h5 class="sidebar-title">Follow Us</h5>
+                            <ul>
+                                <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                                <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+<!-- Properties details page start -->
+
+<!---------------------------------------------------------------------------------------------->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Attach click event listeners to all elements with class 'toggle-reply-form'
+        document.querySelectorAll(".toggle-reply-form").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                const replyFormId = this.getAttribute("data-id");
+                const replyForm = document.getElementById(`reply-form-con-${replyFormId}`);
+
+                if (replyForm) {
+                    // Toggle the display property of the reply form
+                    if (replyForm.style.display === "none" || replyForm.style.display === "") {
+                        replyForm.style.display = "block"; // Show the form
+                        replyForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                    } else {
+                        replyForm.style.display = "none"; // Hide the form
+                    }
+                }
+            });
+        });
+    });
+</script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle-reply-form").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                const formId = this.getAttribute("data-id");
+                const replyForm = document.getElementById(`reply-form-${formId}`);
+                if (replyForm) {
+                    replyForm.style.display = replyForm.style.display === "none" ? "block" : "none";
+                    if (replyForm.style.display === "block") {
+                        replyForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                }
+            });
+        });
+    });
+</script>
+

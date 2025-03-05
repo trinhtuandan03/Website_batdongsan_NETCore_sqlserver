@@ -1,0 +1,56 @@
+﻿@model WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser
+
+@{
+    ViewData["Title"] = "Xóa Loại Tài Khoản";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Xóa Loại Tài Khoản</h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Loại Tài Khoản</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Xóa Loại Tài Khoản</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h3>Đây là thông tin chi tiết loại tài khoản hiện tại. Bạn có chắc chắn muốn xóa loại tài khoản này không?</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Loại Tài Khoản</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tên Loại Tài Khoản -->
+                        <dt class="col-sm-3">Tên Loại Tài Khoản:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenLoaitk)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="IdLoaitk" />
+                        <button type="submit" class="btn btn-danger">Xóa Loại Tài Khoản</button>
+                        <a asp-action="Index" class="btn btn-primary">Quay lại danh sách</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

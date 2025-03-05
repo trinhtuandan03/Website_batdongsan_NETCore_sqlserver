@@ -1,0 +1,4417 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebBatDongSan API",
+    "description": "API Documentation for WebBatDongSan",
+    "contact": {
+      "name": "Hỗ trợ WebBatDongSan",
+      "email": "support@webbatdongsan.com"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/api/BaiViet": {
+      "get": {
+        "tags": [
+          "BaiViet"
+        ],
+        "operationId": "GetAllBaiViets",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BaiViet"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BaiViet"
+        ],
+        "operationId": "CreateBaiViet",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BaiViet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaiViet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiViet/{id}": {
+      "get": {
+        "tags": [
+          "BaiViet"
+        ],
+        "operationId": "GetBaiVietById",
+        "parameters": [
+          {
+            "name": "idbaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaiViet"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BaiViet"
+        ],
+        "operationId": "UpdateBaiViet",
+        "parameters": [
+          {
+            "name": "idbaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BaiViet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BaiViet"
+        ],
+        "operationId": "DeleteBaiViet",
+        "parameters": [
+          {
+            "name": "idbaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/BinhLuan": {
+      "get": {
+        "tags": [
+          "BinhLuan"
+        ],
+        "operationId": "GetAllBinhLuans",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BinhLuan"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BinhLuan"
+        ],
+        "operationId": "CreateBinhLuan",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BinhLuan"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BinhLuan"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BinhLuan/{id}": {
+      "get": {
+        "tags": [
+          "BinhLuan"
+        ],
+        "operationId": "GetBinhLuanById",
+        "parameters": [
+          {
+            "name": "idbinhluan",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BinhLuan"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BinhLuan"
+        ],
+        "operationId": "UpdateBinhLuan",
+        "parameters": [
+          {
+            "name": "idbinhluan",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BinhLuan"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BinhLuan"
+        ],
+        "operationId": "DeleteBinhLuan",
+        "parameters": [
+          {
+            "name": "idbinhluan",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/DuongPho": {
+      "get": {
+        "tags": [
+          "DuongPho"
+        ],
+        "operationId": "GetAllDuongPhos",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DuongPho"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DuongPho"
+        ],
+        "operationId": "CreateDuongPho",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DuongPho"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DuongPho"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DuongPho/{id}": {
+      "get": {
+        "tags": [
+          "DuongPho"
+        ],
+        "operationId": "GetDuongPhoById",
+        "parameters": [
+          {
+            "name": "idduongpho",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DuongPho"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DuongPho"
+        ],
+        "operationId": "UpdateDuongPho",
+        "parameters": [
+          {
+            "name": "idduongpho",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DuongPho"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DuongPho"
+        ],
+        "operationId": "DeleteDuongPho",
+        "parameters": [
+          {
+            "name": "idduongpho",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/GiayToTaiLieu": {
+      "get": {
+        "tags": [
+          "GiayToTaiLieu"
+        ],
+        "operationId": "GetAllGiayToTaiLieus",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GiayToTaiLieu"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "GiayToTaiLieu"
+        ],
+        "operationId": "CreateGiayToTaiLieu",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GiayToTaiLieu"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GiayToTaiLieu"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GiayToTaiLieu/{id}": {
+      "get": {
+        "tags": [
+          "GiayToTaiLieu"
+        ],
+        "operationId": "GetGiayToTaiLieuById",
+        "parameters": [
+          {
+            "name": "idgiaytotailieu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GiayToTaiLieu"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "GiayToTaiLieu"
+        ],
+        "operationId": "UpdateGiayToTaiLieu",
+        "parameters": [
+          {
+            "name": "idgiaytotailieu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GiayToTaiLieu"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "GiayToTaiLieu"
+        ],
+        "operationId": "DeleteGiayToTaiLieu",
+        "parameters": [
+          {
+            "name": "idgiaytotailieu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/CreatePaymentUrl": {
+      "post": {
+        "tags": [
+          "Home"
+        ],
+        "parameters": [
+          {
+            "name": "IdThongTinGiaoDichNapTien",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "FullName",
+            "in": "query",
+            "schema": {
+              "maxLength": 1000,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrderId",
+            "in": "query",
+            "schema": {
+              "maxLength": 1000,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrderInfo",
+            "in": "query",
+            "schema": {
+              "maxLength": 1000,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "Amount",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "CreatedAt",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "IdUser",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdUserNavigation.IdUser",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdUserNavigation.TenTruyCap",
+            "in": "query",
+            "schema": {
+              "maxLength": 50,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.MatKhau",
+            "in": "query",
+            "schema": {
+              "maxLength": 255,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.HoTen",
+            "in": "query",
+            "schema": {
+              "maxLength": 100,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.Sdt",
+            "in": "query",
+            "schema": {
+              "maxLength": 50,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.Email",
+            "in": "query",
+            "schema": {
+              "maxLength": 100,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.LoaiTaiKhoanId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdUserNavigation.NgayDangky",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "IdUserNavigation.SoTien",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "IdUserNavigation.BaiViets",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/BaiViet"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.BinhLuans",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/BinhLuan"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.LichSuGiaoDiches",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/LichSuGiaoDich"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.LienHes",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/LienHe"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.LoaiTaiKhoan.IdLoaitk",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdUserNavigation.LoaiTaiKhoan.TenLoaitk",
+            "in": "query",
+            "schema": {
+              "maxLength": 50,
+              "minLength": 0,
+              "type": "string"
+            }
+          },
+          {
+            "name": "IdUserNavigation.LoaiTaiKhoan.NguoiDungs",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.MomoCreatePaymentResponses",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.MomoOptions",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/MomoOption"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.PhanHoiNapTienMomos",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.SanPhams",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/SanPham"
+              }
+            }
+          },
+          {
+            "name": "IdUserNavigation.ThongTinGiaoDichNapTiens",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/LichSuGiaoDich": {
+      "get": {
+        "tags": [
+          "LichSuGiaoDich"
+        ],
+        "operationId": "GetAllLichSuGiaoDiches",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LichSuGiaoDich"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LichSuGiaoDich"
+        ],
+        "operationId": "CreateLichSuGiaoDich",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LichSuGiaoDich"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LichSuGiaoDich"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichSuGiaoDich/{id}": {
+      "get": {
+        "tags": [
+          "LichSuGiaoDich"
+        ],
+        "operationId": "GetLichSuGiaoDichById",
+        "parameters": [
+          {
+            "name": "idgiaodich",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LichSuGiaoDich"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LichSuGiaoDich"
+        ],
+        "operationId": "UpdateLichSuGiaoDich",
+        "parameters": [
+          {
+            "name": "idgiaodich",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LichSuGiaoDich"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LichSuGiaoDich"
+        ],
+        "operationId": "DeleteLichSuGiaoDich",
+        "parameters": [
+          {
+            "name": "idgiaodich",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/LienHe": {
+      "get": {
+        "tags": [
+          "LienHe"
+        ],
+        "operationId": "GetAllLienHes",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LienHe"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LienHe"
+        ],
+        "operationId": "CreateLienHe",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LienHe"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LienHe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LienHe/{id}": {
+      "get": {
+        "tags": [
+          "LienHe"
+        ],
+        "operationId": "GetLienHeById",
+        "parameters": [
+          {
+            "name": "idlienhe",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LienHe"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LienHe"
+        ],
+        "operationId": "UpdateLienHe",
+        "parameters": [
+          {
+            "name": "idlienhe",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LienHe"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LienHe"
+        ],
+        "operationId": "DeleteLienHe",
+        "parameters": [
+          {
+            "name": "idlienhe",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/LoaiBaiViet": {
+      "get": {
+        "tags": [
+          "LoaiBaiViet"
+        ],
+        "operationId": "GetAllLoaiBaiViets",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LoaiBaiViet"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LoaiBaiViet"
+        ],
+        "operationId": "CreateLoaiBaiViet",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiBaiViet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiBaiViet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoaiBaiViet/{id}": {
+      "get": {
+        "tags": [
+          "LoaiBaiViet"
+        ],
+        "operationId": "GetLoaiBaiVietById",
+        "parameters": [
+          {
+            "name": "idloaibaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiBaiViet"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LoaiBaiViet"
+        ],
+        "operationId": "UpdateLoaiBaiViet",
+        "parameters": [
+          {
+            "name": "idloaibaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiBaiViet"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LoaiBaiViet"
+        ],
+        "operationId": "DeleteLoaiBaiViet",
+        "parameters": [
+          {
+            "name": "idloaibaiviet",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/LoaiBd": {
+      "get": {
+        "tags": [
+          "LoaiBd"
+        ],
+        "operationId": "GetAllLoaiBds",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LoaiBd"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LoaiBd"
+        ],
+        "operationId": "CreateLoaiBd",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiBd"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiBd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoaiBd/{id}": {
+      "get": {
+        "tags": [
+          "LoaiBd"
+        ],
+        "operationId": "GetLoaiBdById",
+        "parameters": [
+          {
+            "name": "idloaibds",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiBd"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LoaiBd"
+        ],
+        "operationId": "UpdateLoaiBd",
+        "parameters": [
+          {
+            "name": "idloaibds",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiBd"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LoaiBd"
+        ],
+        "operationId": "DeleteLoaiBd",
+        "parameters": [
+          {
+            "name": "idloaibds",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/LoaiTaiKhoanUser": {
+      "get": {
+        "tags": [
+          "LoaiTaiKhoanUser"
+        ],
+        "operationId": "GetAllLoaiTaiKhoanUsers",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LoaiTaiKhoanUser"
+        ],
+        "operationId": "CreateLoaiTaiKhoanUser",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoaiTaiKhoanUser/{id}": {
+      "get": {
+        "tags": [
+          "LoaiTaiKhoanUser"
+        ],
+        "operationId": "GetLoaiTaiKhoanUserById",
+        "parameters": [
+          {
+            "name": "idloaitk",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LoaiTaiKhoanUser"
+        ],
+        "operationId": "UpdateLoaiTaiKhoanUser",
+        "parameters": [
+          {
+            "name": "idloaitk",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LoaiTaiKhoanUser"
+        ],
+        "operationId": "DeleteLoaiTaiKhoanUser",
+        "parameters": [
+          {
+            "name": "idloaitk",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/LoaiTin": {
+      "get": {
+        "tags": [
+          "LoaiTin"
+        ],
+        "operationId": "GetAllLoaiTins",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LoaiTin"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "LoaiTin"
+        ],
+        "operationId": "CreateLoaiTin",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiTin"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiTin"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoaiTin/{id}": {
+      "get": {
+        "tags": [
+          "LoaiTin"
+        ],
+        "operationId": "GetLoaiTinById",
+        "parameters": [
+          {
+            "name": "idloaitin",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoaiTin"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LoaiTin"
+        ],
+        "operationId": "UpdateLoaiTin",
+        "parameters": [
+          {
+            "name": "idloaitin",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoaiTin"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LoaiTin"
+        ],
+        "operationId": "DeleteLoaiTin",
+        "parameters": [
+          {
+            "name": "idloaitin",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/MomoCreatePaymentResponse": {
+      "get": {
+        "tags": [
+          "MomoCreatePaymentResponse"
+        ],
+        "operationId": "GetAllMomoCreatePaymentResponses",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MomoCreatePaymentResponse"
+        ],
+        "operationId": "CreateMomoCreatePaymentResponse",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MomoCreatePaymentResponse/{id}": {
+      "get": {
+        "tags": [
+          "MomoCreatePaymentResponse"
+        ],
+        "operationId": "GetMomoCreatePaymentResponseById",
+        "parameters": [
+          {
+            "name": "idmomocreatepayment",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MomoCreatePaymentResponse"
+        ],
+        "operationId": "UpdateMomoCreatePaymentResponse",
+        "parameters": [
+          {
+            "name": "idmomocreatepayment",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MomoCreatePaymentResponse"
+        ],
+        "operationId": "DeleteMomoCreatePaymentResponse",
+        "parameters": [
+          {
+            "name": "idmomocreatepayment",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/MomoOption": {
+      "get": {
+        "tags": [
+          "MomoOption"
+        ],
+        "operationId": "GetAllMomoOptions",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MomoOption"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MomoOption"
+        ],
+        "operationId": "CreateMomoOption",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MomoOption"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MomoOption"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MomoOption/{id}": {
+      "get": {
+        "tags": [
+          "MomoOption"
+        ],
+        "operationId": "GetMomoOptionById",
+        "parameters": [
+          {
+            "name": "idmomooption",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MomoOption"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MomoOption"
+        ],
+        "operationId": "UpdateMomoOption",
+        "parameters": [
+          {
+            "name": "idmomooption",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MomoOption"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MomoOption"
+        ],
+        "operationId": "DeleteMomoOption",
+        "parameters": [
+          {
+            "name": "idmomooption",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "operationId": "GetAllNguoiDungs",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NguoiDung"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "operationId": "CreateNguoiDung",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NguoiDung"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/NguoiDung/{id}": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "operationId": "GetNguoiDungById",
+        "parameters": [
+          {
+            "name": "iduser",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NguoiDung"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "operationId": "UpdateNguoiDung",
+        "parameters": [
+          {
+            "name": "iduser",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "operationId": "DeleteNguoiDung",
+        "parameters": [
+          {
+            "name": "iduser",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/PhanHoiNapTienMomo": {
+      "get": {
+        "tags": [
+          "PhanHoiNapTienMomo"
+        ],
+        "operationId": "GetAllPhanHoiNapTienMomos",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PhanHoiNapTienMomo"
+        ],
+        "operationId": "CreatePhanHoiNapTienMomo",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PhanHoiNapTienMomo/{id}": {
+      "get": {
+        "tags": [
+          "PhanHoiNapTienMomo"
+        ],
+        "operationId": "GetPhanHoiNapTienMomoById",
+        "parameters": [
+          {
+            "name": "idphanhoinaptienmomo",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PhanHoiNapTienMomo"
+        ],
+        "operationId": "UpdatePhanHoiNapTienMomo",
+        "parameters": [
+          {
+            "name": "idphanhoinaptienmomo",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PhanHoiNapTienMomo"
+        ],
+        "operationId": "DeletePhanHoiNapTienMomo",
+        "parameters": [
+          {
+            "name": "idphanhoinaptienmomo",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/PhuongHuong": {
+      "get": {
+        "tags": [
+          "PhuongHuong"
+        ],
+        "operationId": "GetAllPhuongHuongs",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PhuongHuong"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PhuongHuong"
+        ],
+        "operationId": "CreatePhuongHuong",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongHuong"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhuongHuong"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PhuongHuong/{id}": {
+      "get": {
+        "tags": [
+          "PhuongHuong"
+        ],
+        "operationId": "GetPhuongHuongById",
+        "parameters": [
+          {
+            "name": "idphuonghuong",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhuongHuong"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PhuongHuong"
+        ],
+        "operationId": "UpdatePhuongHuong",
+        "parameters": [
+          {
+            "name": "idphuonghuong",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongHuong"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PhuongHuong"
+        ],
+        "operationId": "DeletePhuongHuong",
+        "parameters": [
+          {
+            "name": "idphuonghuong",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/PhuongXa": {
+      "get": {
+        "tags": [
+          "PhuongXa"
+        ],
+        "operationId": "GetAllPhuongXas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PhuongXa"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PhuongXa"
+        ],
+        "operationId": "CreatePhuongXa",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongXa"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhuongXa"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PhuongXa/{id}": {
+      "get": {
+        "tags": [
+          "PhuongXa"
+        ],
+        "operationId": "GetPhuongXaById",
+        "parameters": [
+          {
+            "name": "idphuongxa",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhuongXa"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PhuongXa"
+        ],
+        "operationId": "UpdatePhuongXa",
+        "parameters": [
+          {
+            "name": "idphuongxa",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongXa"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PhuongXa"
+        ],
+        "operationId": "DeletePhuongXa",
+        "parameters": [
+          {
+            "name": "idphuongxa",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/QuanHuyen": {
+      "get": {
+        "tags": [
+          "QuanHuyen"
+        ],
+        "operationId": "GetAllQuanHuyens",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/QuanHuyen"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "QuanHuyen"
+        ],
+        "operationId": "CreateQuanHuyen",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuanHuyen"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuanHuyen"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/QuanHuyen/{id}": {
+      "get": {
+        "tags": [
+          "QuanHuyen"
+        ],
+        "operationId": "GetQuanHuyenById",
+        "parameters": [
+          {
+            "name": "idquanhuyen",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuanHuyen"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "QuanHuyen"
+        ],
+        "operationId": "UpdateQuanHuyen",
+        "parameters": [
+          {
+            "name": "idquanhuyen",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuanHuyen"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "QuanHuyen"
+        ],
+        "operationId": "DeleteQuanHuyen",
+        "parameters": [
+          {
+            "name": "idquanhuyen",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/SanPham": {
+      "get": {
+        "tags": [
+          "SanPham"
+        ],
+        "operationId": "GetAllSanPhams",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SanPham"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SanPham"
+        ],
+        "operationId": "CreateSanPham",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanPham"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SanPham"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SanPham/{id}": {
+      "get": {
+        "tags": [
+          "SanPham"
+        ],
+        "operationId": "GetSanPhamById",
+        "parameters": [
+          {
+            "name": "idsanpham",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SanPham"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SanPham"
+        ],
+        "operationId": "UpdateSanPham",
+        "parameters": [
+          {
+            "name": "idsanpham",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanPham"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SanPham"
+        ],
+        "operationId": "DeleteSanPham",
+        "parameters": [
+          {
+            "name": "idsanpham",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/ThongTinGiaoDichNapTien": {
+      "get": {
+        "tags": [
+          "ThongTinGiaoDichNapTien"
+        ],
+        "operationId": "GetAllThongTinGiaoDichNapTiens",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ThongTinGiaoDichNapTien"
+        ],
+        "operationId": "CreateThongTinGiaoDichNapTien",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinGiaoDichNapTien/{id}": {
+      "get": {
+        "tags": [
+          "ThongTinGiaoDichNapTien"
+        ],
+        "operationId": "GetThongTinGiaoDichNapTienById",
+        "parameters": [
+          {
+            "name": "idthongtingiaodichnaptien",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ThongTinGiaoDichNapTien"
+        ],
+        "operationId": "UpdateThongTinGiaoDichNapTien",
+        "parameters": [
+          {
+            "name": "idthongtingiaodichnaptien",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ThongTinGiaoDichNapTien"
+        ],
+        "operationId": "DeleteThongTinGiaoDichNapTien",
+        "parameters": [
+          {
+            "name": "idthongtingiaodichnaptien",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/TinhThanh": {
+      "get": {
+        "tags": [
+          "TinhThanh"
+        ],
+        "operationId": "GetAllTinhThanhs",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TinhThanh"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TinhThanh"
+        ],
+        "operationId": "CreateTinhThanh",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TinhThanh"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TinhThanh"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TinhThanh/{id}": {
+      "get": {
+        "tags": [
+          "TinhThanh"
+        ],
+        "operationId": "GetTinhThanhById",
+        "parameters": [
+          {
+            "name": "idtinhthanh",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TinhThanh"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TinhThanh"
+        ],
+        "operationId": "UpdateTinhThanh",
+        "parameters": [
+          {
+            "name": "idtinhthanh",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TinhThanh"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TinhThanh"
+        ],
+        "operationId": "DeleteTinhThanh",
+        "parameters": [
+          {
+            "name": "idtinhthanh",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/TrangThai": {
+      "get": {
+        "tags": [
+          "TrangThai"
+        ],
+        "operationId": "GetAllTrangThais",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrangThai"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TrangThai"
+        ],
+        "operationId": "CreateTrangThai",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrangThai"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrangThai"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TrangThai/{id}": {
+      "get": {
+        "tags": [
+          "TrangThai"
+        ],
+        "operationId": "GetTrangThaiById",
+        "parameters": [
+          {
+            "name": "idtrangthai",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrangThai"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TrangThai"
+        ],
+        "operationId": "UpdateTrangThai",
+        "parameters": [
+          {
+            "name": "idtrangthai",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrangThai"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TrangThai"
+        ],
+        "operationId": "DeleteTrangThai",
+        "parameters": [
+          {
+            "name": "idtrangthai",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BaiViet": {
+        "type": "object",
+        "properties": {
+          "idBaiviet": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tieuDe": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idLoaibaiviet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTrangthai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "binhLuans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BinhLuan"
+            },
+            "nullable": true
+          },
+          "idLoaibaivietNavigation": {
+            "$ref": "#/components/schemas/LoaiBaiViet"
+          },
+          "idTrangthaiNavigation": {
+            "$ref": "#/components/schemas/TrangThai"
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "lichSuGiaoDiches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LichSuGiaoDich"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BinhLuan": {
+        "type": "object",
+        "properties": {
+          "idBinhluan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSanpham": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idBaiviet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "binhLuanChaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "binhLuanCha": {
+            "$ref": "#/components/schemas/BinhLuan"
+          },
+          "idBaivietNavigation": {
+            "$ref": "#/components/schemas/BaiViet"
+          },
+          "idSanphamNavigation": {
+            "$ref": "#/components/schemas/SanPham"
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "inverseBinhLuanCha": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BinhLuan"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DuongPho": {
+        "type": "object",
+        "properties": {
+          "idDuongpho": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenDuongpho": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idPhuongxa": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idPhuongxaNavigation": {
+            "$ref": "#/components/schemas/PhuongXa"
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GiayToTaiLieu": {
+        "type": "object",
+        "properties": {
+          "idGiaytoTailieu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenGiaytoTailieu": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LichSuGiaoDich": {
+        "type": "object",
+        "properties": {
+          "idGiaoDich": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idBaiviet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idSanpham": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "soTien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "loaiGiaoDich": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "thoiGianGiaoDich": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idBaivietNavigation": {
+            "$ref": "#/components/schemas/BaiViet"
+          },
+          "idSanphamNavigation": {
+            "$ref": "#/components/schemas/SanPham"
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LienHe": {
+        "type": "object",
+        "properties": {
+          "idLienHe": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tieuDe": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "thoiGianGui": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hoTen": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiBaiViet": {
+        "type": "object",
+        "properties": {
+          "idLoaibaiviet": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenloaibaiviet": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "baiViets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaiViet"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiBd": {
+        "type": "object",
+        "properties": {
+          "idLoaibds": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenLoaibds": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiTaiKhoanUser": {
+        "type": "object",
+        "properties": {
+          "idLoaitk": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenLoaitk": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "nguoiDungs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NguoiDung"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiTin": {
+        "type": "object",
+        "properties": {
+          "idLoaitin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenLoaitin": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MomoCreatePaymentResponse": {
+        "type": "object",
+        "properties": {
+          "idMomoCreatePayment": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "requestId": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "errorCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "orderId": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "localMessage": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "requestType": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "payUrl": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "signature": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "qrCodeUrl": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "deeplink": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "deeplinkWebInApp": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MomoOption": {
+        "type": "object",
+        "properties": {
+          "idMomoOption": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "momoApiUrl": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "secretKey": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "accessKey": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "returnUrl": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "notifyUrl": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "partnerCode": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "requestType": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NguoiDung": {
+        "type": "object",
+        "properties": {
+          "idUser": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenTruyCap": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "matKhau": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sdt": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "loaiTaiKhoanId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngayDangky": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "soTien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "baiViets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaiViet"
+            },
+            "nullable": true
+          },
+          "binhLuans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BinhLuan"
+            },
+            "nullable": true
+          },
+          "lichSuGiaoDiches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LichSuGiaoDich"
+            },
+            "nullable": true
+          },
+          "lienHes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LienHe"
+            },
+            "nullable": true
+          },
+          "loaiTaiKhoan": {
+            "$ref": "#/components/schemas/LoaiTaiKhoanUser"
+          },
+          "momoCreatePaymentResponses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MomoCreatePaymentResponse"
+            },
+            "nullable": true
+          },
+          "momoOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MomoOption"
+            },
+            "nullable": true
+          },
+          "phanHoiNapTienMomos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PhanHoiNapTienMomo"
+            },
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          },
+          "thongTinGiaoDichNapTiens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ThongTinGiaoDichNapTien"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhanHoiNapTienMomo": {
+        "type": "object",
+        "properties": {
+          "idPhanHoiNapTienMomo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderId": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "orderInfo": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhuongHuong": {
+        "type": "object",
+        "properties": {
+          "idPhuonghuong": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenPhuonghuong": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhuongXa": {
+        "type": "object",
+        "properties": {
+          "idPhuongxa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenPhuongxa": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idQuanhuyen": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "duongPhos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DuongPho"
+            },
+            "nullable": true
+          },
+          "idQuanhuyenNavigation": {
+            "$ref": "#/components/schemas/QuanHuyen"
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuanHuyen": {
+        "type": "object",
+        "properties": {
+          "idQuanhuyen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenQuanhuyen": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idTinhthanh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTinhthanhNavigation": {
+            "$ref": "#/components/schemas/TinhThanh"
+          },
+          "phuongXas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PhuongXa"
+            },
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SanPham": {
+        "type": "object",
+        "properties": {
+          "idSanpham": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tieuDeSanpham": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "moTaSanpham": {
+            "type": "string",
+            "nullable": true
+          },
+          "giaSanPham": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dienTich": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ngayDang": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "img1": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "img2": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "img3": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "img4": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "img5": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idGiaytoTailieu": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idLoaitin": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idLoaibds": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTinhthanh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idQuanhuyen": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idPhuongxa": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "chieungang": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "chieudai": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "soLau": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "soPhongNgu": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "phongAn": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "nhaBep": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sanThuong": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "choDeXeHoi": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idDuongpho": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idPhuonghuong": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTrangthai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "binhLuans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BinhLuan"
+            },
+            "nullable": true
+          },
+          "idDuongphoNavigation": {
+            "$ref": "#/components/schemas/DuongPho"
+          },
+          "idGiaytoTailieuNavigation": {
+            "$ref": "#/components/schemas/GiayToTaiLieu"
+          },
+          "idLoaibdsNavigation": {
+            "$ref": "#/components/schemas/LoaiBd"
+          },
+          "idLoaitinNavigation": {
+            "$ref": "#/components/schemas/LoaiTin"
+          },
+          "idPhuonghuongNavigation": {
+            "$ref": "#/components/schemas/PhuongHuong"
+          },
+          "idPhuongxaNavigation": {
+            "$ref": "#/components/schemas/PhuongXa"
+          },
+          "idQuanhuyenNavigation": {
+            "$ref": "#/components/schemas/QuanHuyen"
+          },
+          "idTinhthanhNavigation": {
+            "$ref": "#/components/schemas/TinhThanh"
+          },
+          "idTrangthaiNavigation": {
+            "$ref": "#/components/schemas/TrangThai"
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "lichSuGiaoDiches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LichSuGiaoDich"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThongTinGiaoDichNapTien": {
+        "type": "object",
+        "properties": {
+          "idThongTinGiaoDichNapTien": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "orderId": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "orderInfo": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idUserNavigation": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TinhThanh": {
+        "type": "object",
+        "properties": {
+          "idTinhthanh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenTinhthanh": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "quanHuyens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuanHuyen"
+            },
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrangThai": {
+        "type": "object",
+        "properties": {
+          "idTrangthai": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenTrangthai": {
+            "type": "string",
+            "nullable": true
+          },
+          "baiViets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaiViet"
+            },
+            "nullable": true
+          },
+          "sanPhams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SanPham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+﻿@model WebBatDongSan_DKCN.Models.SanPham
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Thông Tin Chi Tiết Sản Phẩm</h2>
+                <p class="pageheader-text">
+                    Đây là thông tin chi tiết sản phẩm hiện tại, bao gồm tiêu đề, mô tả, giá và các thông tin liên quan.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Sản Phẩm</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Sản Phẩm</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Sản Phẩm</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tiêu Đề -->
+                        <dt class="col-sm-3">Tiêu Đề:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TieuDeSanpham)</dd>
+
+                        <!-- Mô Tả -->
+                        <dt class="col-sm-3">Mô Tả:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.MoTaSanpham)</dd>
+
+                        <!-- Giá -->
+                        <dt class="col-sm-3">Giá:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.GiaSanPham)</dd>
+
+                        <!-- Diện Tích -->
+                        <dt class="col-sm-3">Diện Tích:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.DienTich)</dd>
+
+                        <!-- Ngày Đăng -->
+                        <dt class="col-sm-3">Ngày Đăng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayDang)</dd>
+
+                        <!-- Ảnh Sản Phẩm -->
+                        <dt class="col-sm-3">Ảnh 1:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Img1)</dd>
+                        <dt class="col-sm-3">Ảnh 2:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Img2)</dd>
+                        <dt class="col-sm-3">Ảnh 3:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Img3)</dd>
+                        <dt class="col-sm-3">Ảnh 4:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Img4)</dd>
+                        <dt class="col-sm-3">Ảnh 5:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Img5)</dd>
+
+                        <!-- Kích Thước -->
+                        <dt class="col-sm-3">Chiều Dài:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Chieudai)</dd>
+                        <dt class="col-sm-3">Chiều Ngang:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Chieungang)</dd>
+
+                        <!-- Thông Tin Liên Quan -->
+                        <dt class="col-sm-3">Số Lầu:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.SoLau)</dd>
+                        <dt class="col-sm-3">Số Phòng Ngủ:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.SoPhongNgu)</dd>
+                        <dt class="col-sm-3">Phòng Ăn:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.PhongAn)</dd>
+                        <dt class="col-sm-3">Nhà Bếp:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NhaBep)</dd>
+                        <dt class="col-sm-3">Sân Thượng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.SanThuong)</dd>
+                        <dt class="col-sm-3">Chỗ Để Xe:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.ChoDeXeHoi)</dd>
+
+                        <!-- Địa Chỉ -->
+                        <dt class="col-sm-3">Địa Chỉ:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.DiaChi)</dd>
+
+                        <!-- Các Thông Tin Liên Quan -->
+                        <dt class="col-sm-3">Mã Đường Phố:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdDuongphoNavigation.IdDuongpho)</dd>
+                        <dt class="col-sm-3">Mã Giấy Tờ Tài Liệu:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdGiaytoTailieuNavigation.IdGiaytoTailieu)</dd>
+                        <dt class="col-sm-3">Mã Loại BĐS:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdLoaibdsNavigation.IdLoaibds)</dd>
+                        <dt class="col-sm-3">Mã Loại Tin:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdLoaitinNavigation.IdLoaitin)</dd>
+                        <dt class="col-sm-3">Mã Phương Hướng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdPhuonghuongNavigation.IdPhuonghuong)</dd>
+                        <dt class="col-sm-3">Mã Phường Xã:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdPhuongxaNavigation.IdPhuongxa)</dd>
+                        <dt class="col-sm-3">Mã Quận Huyện:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdQuanhuyenNavigation.IdQuanhuyen)</dd>
+                        <dt class="col-sm-3">Mã Tỉnh Thành:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdTinhthanhNavigation.IdTinhthanh)</dd>
+                        <dt class="col-sm-3">Mã Trạng Thái:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdTrangthaiNavigation.IdTrangthai)</dd>
+                        <dt class="col-sm-3">Mã Người Dùng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdUserNavigation.IdUser)</dd>
+                    </dl>
+                </div>
+
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdSanpham" class="btn btn-primary">Sửa Sản Phẩm</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

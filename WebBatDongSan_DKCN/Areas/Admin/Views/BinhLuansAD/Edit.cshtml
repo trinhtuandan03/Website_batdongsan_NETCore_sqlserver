@@ -1,0 +1,99 @@
+﻿@model WebBatDongSan_DKCN.Models.BinhLuan
+
+@{
+    ViewData["Title"] = "Sửa Bình Luận";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Sửa Bình Luận</h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Bình Luận</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sửa Bình Luận</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Chỉnh sửa bình luận</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <!-- Hidden field to store the ID -->
+                        <input type="hidden" asp-for="IdBinhluan" />
+
+                        <!-- Nội Dung -->
+                        <div class="form-group row">
+                            <label asp-for="NoiDung" class="col-12 col-sm-3 col-form-label text-sm-right">Nội Dung</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <textarea asp-for="NoiDung" class="form-control" placeholder="Nhập nội dung bình luận"></textarea>
+                                <span asp-validation-for="NoiDung" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Bài Viết -->
+                        <div class="form-group row">
+                            <label asp-for="IdBaiviet" class="col-12 col-sm-3 col-form-label text-sm-right">Bài Viết</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <select asp-for="IdBaiviet" class="form-control" asp-items="ViewBag.IdBaiviet"></select>
+                                <span asp-validation-for="IdBaiviet" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Sản Phẩm -->
+                        <div class="form-group row">
+                            <label asp-for="IdSanpham" class="col-12 col-sm-3 col-form-label text-sm-right">Sản Phẩm</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <select asp-for="IdSanpham" class="form-control" asp-items="ViewBag.IdSanpham"></select>
+                                <span asp-validation-for="IdSanpham" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Ngày Tạo -->
+                        <div class="form-group row">
+                            <label asp-for="NgayTao" class="col-12 col-sm-3 col-form-label text-sm-right">Ngày Tạo</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <input asp-for="NgayTao" type="datetime-local" class="form-control" />
+                                <span asp-validation-for="NgayTao" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Người Dùng -->
+                        <div class="form-group row">
+                            <label asp-for="IdUser" class="col-12 col-sm-3 col-form-label text-sm-right">Người Dùng</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <select asp-for="IdUser" class="form-control" asp-items="ViewBag.IdUser"></select>
+                                <span asp-validation-for="IdUser" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Nút Thao Tác -->
+                        <div class="form-group row text-right">
+                            <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                                <input type="submit" value="Lưu" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

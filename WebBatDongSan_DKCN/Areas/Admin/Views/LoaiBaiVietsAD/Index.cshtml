@@ -1,0 +1,85 @@
+﻿@model IEnumerable<WebBatDongSan_DKCN.Models.LoaiBaiViet>
+
+@{
+    ViewData["Title"] = "Danh Sách Loại Bài Viết";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h1 class="pageheader-title">Danh Sách Loại Bài Viết</h1>
+                <p class="pageheader-text">Danh sách các loại bài viết trong hệ thống. Bạn có thể thêm mới, chỉnh sửa hoặc xóa các loại bài viết tại đây.</p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#" class="breadcrumb-link">
+                                    Quản Lý Loại Bài Viết
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh Sách Loại Bài Viết</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <!-- ============================================================== -->
+        <!-- basic table  -->
+        <!-- ============================================================== -->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <p>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a asp-action="Create" class="btn btn-primary">Thêm Mới Loại Bài Viết</a>
+                    </div>
+                </p>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered first">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Tenloaibaiviet)
+                                    </th>
+                                    <th class="text-center">
+                                        Chức Năng
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.Tenloaibaiviet)</td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <a asp-action="Edit" asp-route-id="@item.IdLoaibaiviet" class="btn btn-sm btn-outline-light" style="background-color: #0088cc; color: white;">Edit</a>
+                                                <a asp-action="Details" asp-route-id="@item.IdLoaibaiviet" class="btn btn-sm btn-outline-light" style="background-color: #58AD69; color: white;">Details</a>
+                                                <a asp-action="Delete" asp-route-id="@item.IdLoaibaiviet" class="btn btn-sm btn-outline-light" style="background-color: #FF5A5F; color: white;">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end basic table  -->
+        <!-- ============================================================== -->
+    </div>
+</div>

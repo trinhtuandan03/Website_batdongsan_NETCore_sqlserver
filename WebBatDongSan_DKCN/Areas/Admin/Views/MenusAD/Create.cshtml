@@ -1,0 +1,69 @@
+﻿@model WebBatDongSan_DKCN.Models.Menu
+
+@{
+    ViewData["Title"] = "Thêm Menu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="card">
+        <h2 class="card-header">Thêm Menu</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Menu</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Thêm Menu</li>
+        </ol>
+        <div class="card-body">
+            <form asp-action="Create" id="validationform" data-parsley-validate="" novalidate="">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Tiêu Đề -->
+                <div class="form-group row">
+                    <label asp-for="Title" class="col-12 col-sm-3 col-form-label text-sm-right">Tiêu Đề</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="Title" class="form-control" placeholder="Nhập tiêu đề menu" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Thứ Tự -->
+                <div class="form-group row">
+                    <label asp-for="Order" class="col-12 col-sm-3 col-form-label text-sm-right">Thứ Tự</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="Order" class="form-control" placeholder="Nhập thứ tự menu" />
+                        <span asp-validation-for="Order" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Đường Dẫn -->
+                <div class="form-group row">
+                    <label asp-for="Link" class="col-12 col-sm-3 col-form-label text-sm-right">Đường Dẫn</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="Link" class="form-control" placeholder="Nhập đường dẫn menu" />
+                        <span asp-validation-for="Link" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Ẩn -->
+                <div class="form-group row">
+                    <label asp-for="Hide" class="col-12 col-sm-3 col-form-label text-sm-right">Ẩn</label>
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <input asp-for="Hide" class="form-control" placeholder="Nhập trạng thái ẩn (true/false)" />
+                        <span asp-validation-for="Hide" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Nút Thao Tác -->
+                <div class="form-group row text-right">
+                    <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                        <button type="submit" class="btn btn-space btn-primary">Thêm Menu</button>
+                        <a asp-action="Index" class="btn btn-space btn-secondary">Quay lại danh sách</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebBatDongSan_DKCN.Models.Menu>
+
+@{
+    ViewData["Title"] = "Quản Lý Menu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h1 class="pageheader-title">Danh Sách Menu</h1>
+                <p class="pageheader-text">Quản lý các menu trong hệ thống.</p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Menu</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh Sách Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <!-- ============================================================== -->
+        <!-- basic table  -->
+        <!-- ============================================================== -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <a asp-action="Create" class="btn btn-primary">Thêm Menu Mới</a>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.First().Title)</th>
+                                    <th>@Html.DisplayNameFor(model => model.First().Order)</th>
+                                    <th>@Html.DisplayNameFor(model => model.First().Link)</th>
+                                    <th>@Html.DisplayNameFor(model => model.First().Hide)</th>
+                                    <th class="text-center">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Order)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Link)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Hide)</td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <a asp-action="Edit" asp-route-id="@item.IdMenu" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                <a asp-action="Details" asp-route-id="@item.IdMenu" class="btn btn-sm btn-outline-success">Details</a>
+                                                <a asp-action="Delete" asp-route-id="@item.IdMenu" class="btn btn-sm btn-outline-danger">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end basic table  -->
+        <!-- ============================================================== -->
+    </div>
+</div>

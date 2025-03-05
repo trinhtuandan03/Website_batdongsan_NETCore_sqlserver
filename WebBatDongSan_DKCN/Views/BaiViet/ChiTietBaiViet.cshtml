@@ -1,0 +1,186 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.BaiVietsViewModels
+
+@{
+    ViewData["Title"] = "Chi Tiết Bài Viết";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Xem Chi Tiết Bài Viết</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Xem Chi Tiết Bài Viết</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog section start -->
+<div class="blog-section content-area-7">
+    <div class="container">
+        @foreach (var baiViet in Model.BaiViets)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Danh Sách Bài Viết -->
+                    <div class="blog-2 mb-50 blog-big">
+                        <div class="blog-photo">
+                            <img src="~/img/blog/blog-3.jpg" alt="blog-image" class="img-fluid">
+                        </div>
+                        <div class="blog-one__single-text-box detail">
+                            <h3 class="title">@baiViet.TieuDe</h3>
+                            <p>@baiViet.NoiDung</p>
+                        </div>
+                    </div>
+                    <!-- bình luận  -->
+                    <div class="comments-section mb-60">
+                        <h3 class="heading-3">Bình Luận Bài Viết</h3>
+                        @if (!Model.BinhLuans.Any())
+                        {
+                            <p>Chưa có bình luận nào. Hãy là người đầu tiên bình luận!</p>
+                        }
+                        else
+                        {
+                            <ul class="comments">
+                                <!-- Danh Sách Hiển thị các bình luận cha -->
+                                @foreach (var binhLuanCha in Model.BinhLuans.Where(c => c.BinhLuanChaId == null))
+                                {
+                                    <li>                                 
+                                        <div class="comment">
+                                            <div class="comment-author">
+                                                <a href="#">
+                                                    <img src="~/img/avatar/avatar-13.jpg" alt="user-avatar">
+                                                </a>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-meta">
+                                                    <div class="comment-meta-author">
+                                                        Người dùng: @binhLuanCha.IdUser
+                                                    </div>
+                                                    <div class="comment-meta-reply">
+                                                        <!-- Nút Phản hồi để Người dùng nào đó muốn Phản Hồi Bình Luận cha -->
+                                                        <a href="#" class="toggle-reply-form" data-id="@binhLuanCha.IdBinhluan">Trả Lời Bình Luận Cha </a>
+                                                    </div>
+                                                    <div class="comment-meta-date">
+                                                        <span>@binhLuanCha.NgayTao?.ToString("hh:mm tt dd/MM/yyyy")</span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="comment-body">
+                                                    <p>@binhLuanCha.NoiDung</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Danh Sách Hiển thị các bình luận Con -->
+                                        <ul>
+                                            @foreach (var binhLuanCon in Model.BinhLuans.Where(r => r.BinhLuanChaId == binhLuanCha.IdBinhluan))
+                                            {
+                                                <li>       
+                                                    <div class="comment">
+                                                        <div class="comment-author">
+                                                            <a href="#">
+                                                                <img src="~/img/avatar/avatar-13.jpg" alt="user-avatar">
+                                                            </a>
+                                                        </div>
+                                                        <div class="comment-content">
+                                                            <div class="comment-meta">
+                                                                <div class="comment-meta-author">
+                                                                    Người dùng: @binhLuanCon.IdUser
+                                                                </div>
+                                                                <div class="comment-meta-reply">
+                                                                    <!-- Nút Phản hồi để Người dùng nào đó muốn Phản Hồi Bình Luận -->
+                                                                    <a href="#" class="toggle-reply-form" data-id="@binhLuanCon.IdBinhluan">Trả Lời Bình Luận Con</a>
+                                                                </div>
+                                                                <div class="comment-meta-date">
+                                                                    <cite>@binhLuanCon.NgayTao?.ToString("hh:mm tt dd/MM/yyyy")</cite>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="comment-body">
+                                                                <p>@binhLuanCon.NoiDung</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Form thêm phản hồi trả Lời và  Hiển thị lên Danh Sách Bình luận Con -->                                            
+                                                    <div id="reply-form-con-@binhLuanCon.IdBinhluan" style="display: none;">
+                                                        <form method="post" asp-action="LuuBinhLuan">
+                                                            <input type="hidden" name="idBaiViet" value="@baiViet.IdBaiviet" />
+                                                            <input type="hidden" name="idBinhLuanCha" value="@binhLuanCha.IdBinhluan" />
+                                                            <textarea name="noiDung" class="form-control" placeholder="Nhập trả lời..." required></textarea>
+                                                            <button type="submit" class="btn btn-primary mt-2">Gửi trả Lời</button>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            }
+                                        </ul>
+                                        <!-- Form thêm phản hồi trả Lời và  Hiển thị lên Danh Sách Bình luận Cha -->
+                                        <div class="reply-form mt-3" id="reply-form-@binhLuanCha.IdBinhluan" style="display: none;">
+                                            <form method="post" asp-action="LuuBinhLuan">
+                                                <input type="hidden" name="idBaiViet" value="@baiViet.IdBaiviet" />
+                                                <input type="hidden" name="idBinhLuanCha" value="@binhLuanCha.IdBinhluan" />
+                                                <textarea name="noiDung" class="form-control" placeholder="Nhập trả lời..." required></textarea>
+                                                <button type="submit" class="btn btn-primary mt-2">Gửi trả Lời</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        <!-- Form thêm bình luận mới Gốc -->
+                        <div class="comment-form mt-4">
+                            <h4>Thêm Bình Luận</h4>
+                            <form method="post" asp-action="LuuBinhLuan">
+                                <input type="hidden" name="idBaiViet" value="@baiViet.IdBaiviet" />
+                                <textarea name="noiDung" class="form-control" placeholder="Nhập bình luận của bạn..." required></textarea>
+                                <button type="submit" class="btn btn-success mt-2">Gửi Bình Luận</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- bình luận  -->
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Attach click event listeners to all elements with class 'toggle-reply-form'
+        document.querySelectorAll(".toggle-reply-form").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                const replyFormId = this.getAttribute("data-id");
+                const replyForm = document.getElementById(`reply-form-con-${replyFormId}`);
+
+                if (replyForm) {
+                    // Toggle the display property of the reply form
+                    if (replyForm.style.display === "none" || replyForm.style.display === "") {
+                        replyForm.style.display = "block"; // Show the form
+                        replyForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                    } else {
+                        replyForm.style.display = "none"; // Hide the form
+                    }
+                }
+            });
+        });
+    });
+</script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle-reply-form").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                const formId = this.getAttribute("data-id");
+                const replyForm = document.getElementById(`reply-form-${formId}`);
+                if (replyForm) {
+                    replyForm.style.display = replyForm.style.display === "none" ? "block" : "none";
+                    if (replyForm.style.display === "block") {
+                        replyForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                }
+            });
+        });
+    });
+</script>

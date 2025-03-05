@@ -1,0 +1,122 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "BatDongSanDKCNContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "WebBatDongSan_DKCN",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[BaiViet]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BinhLuan]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DuongPho]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GiaoDich]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GiayTo_TaiLieu]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LienHe]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoaiBaiViet]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoaiBDS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoaiGiaoDich]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoaiTaiKhoanUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoaiTin]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Menu]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MomoInfos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NguoiDung]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PhuongHuong]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PhuongXa]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[QuanHuyen]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SanPham]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TinhThanh]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrangThai]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": true
+}

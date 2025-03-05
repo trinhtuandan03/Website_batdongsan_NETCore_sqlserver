@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Trang Chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@await Html.PartialAsync("_HeaderPartialView")
+
+@await Html.PartialAsync("_NavigationPartialView")
+
+@await Html.PartialAsync("_ProductPartialView")

@@ -1,0 +1,83 @@
+﻿@model WebBatDongSan_DKCN.Models.NguoiDung
+
+@{
+    ViewData["Title"] = "Chi Tiết Thông Tin Người Dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Chi Tiết Thông Tin Người Dùng</h2>
+                <p class="pageheader-text">
+                    Đây là thông tin chi tiết người dùng hiện tại, bao gồm tên truy cập, họ tên, email, và các thông tin liên quan khác.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Người Dùng</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Người Dùng</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Người Dùng</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tên Truy Cập -->
+                        <dt class="col-sm-3">Tên Truy Cập:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenTruyCap)</dd>
+
+                        <!-- Mật Khẩu -->
+                        <dt class="col-sm-3">Mật Khẩu:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.MatKhau)</dd>
+
+                        <!-- Họ Tên -->
+                        <dt class="col-sm-3">Họ Tên:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.HoTen)</dd>
+
+                        <!-- Sđt -->
+                        <dt class="col-sm-3">SĐT:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Sdt)</dd>
+
+                        <!-- Email -->
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+                        <!-- Ngày Đăng Ký -->
+                        <dt class="col-sm-3">Ngày Đăng Ký:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayDangky)</dd>
+
+                        <!-- Số Tiền -->
+                        <dt class="col-sm-3">Số Tiền:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.SoTien)</dd>
+
+                        <!-- Loại Tài Khoản -->
+                        <dt class="col-sm-3">Loại Tài Khoản:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.LoaiTaiKhoan.TenLoaitk)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdUser" class="btn btn-primary">Sửa Người Dùng</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

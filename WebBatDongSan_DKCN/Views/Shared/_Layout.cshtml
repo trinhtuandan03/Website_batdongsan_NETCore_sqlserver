@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm5445.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PDTWJ3Z');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Website Bất Động Sản Đk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <link type="text/css" rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="~/css/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" href="~/css/jquery.selectBox.css">
+    <link type="text/css" rel="stylesheet" href="~/css/dropzone.css">
+    <link type="text/css" rel="stylesheet" href="~/css/rangeslider.css">
+    <link type="text/css" rel="stylesheet" href="~/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="~/css/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="~/css/slick.css">
+    <link type="text/css" rel="stylesheet" href="~/css/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="~/css/map.css">
+    <link type="text/css" rel="stylesheet" href="~/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="~/fonts/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+
+    <!-- Favicon icon -->
+
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/css/skins/default.css">
+
+</head>
+<body>
+    <!--  Bắt Đầu MenuPartial  -->
+    @if (ViewBag.HideMenuAndFooter == null || ViewBag.HideMenuAndFooter == false)
+    {
+        <!--ViewBag.HideMenuAndFooter = true;-->
+        @Html.Partial("_MenuPartial")
+    }
+    <!-- Kết thúc MenuPartial  -->
+    @RenderBody()
+    <!-- Bắt Đầu Footer  -->
+    @if (ViewBag.HideMenuAndFooter == null || ViewBag.HideMenuAndFooter == false)
+    {
+        @Html.Partial("_FooterPartialView")
+    }
+        <!-- Kết thúc Footer  -->
+    <!-- External JS libraries -->
+    <script src="~/js/jquery-2.2.0.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.selectBox.js"></script>
+    <script src="~/js/rangeslider.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.filterizr.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/backstretch.js"></script>
+    <script src="~/js/jquery.countdown.js"></script>
+    <script src="~/js/jquery.scrollUp.js"></script>
+    <script src="~/js/particles.min.js"></script>
+    <script src="~/js/typed.min.js"></script>
+    <script src="~/js/dropzone.js"></script>
+    <script src="~/js/jquery.mb.YTPlayer.js"></script>
+    <script src="~/js/leaflet.js"></script>
+    <script src="~/js/leaflet-providers.js"></script>
+    <script src="~/js/leaflet.markercluster.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/maps.js"></script>
+    <script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4omYJlOaP814WDcCG8eubXcbhB-44Uac"></script>
+    <script src="~/js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom JS Script -->
+    <script src="~/js/app.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

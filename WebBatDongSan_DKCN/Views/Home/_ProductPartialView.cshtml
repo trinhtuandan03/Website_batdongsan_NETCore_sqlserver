@@ -1,0 +1,186 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.HomeViewModel
+
+<!--------------------------------------------------- Danh Sách sản phẩm Loại Nhà mặt tiền  ------------------------------------------------------------------------------->
+<!-- Bắt Đầu Danh Mục Sản Phẩm Nổi Bật -->
+<!-- Recent Properties start -->
+<div class="recent-properties content-area-2">
+    <div class="container">
+        <div class="main-title">
+            <h1>@Model.TenLoaiNhaMatTien</h1>
+            <p>Những mẫu nhà siêu Đẹp.</p>          
+        </div>
+        <div class="row">
+            @foreach (var sanPham in Model.SanPhamNhaMatTien)
+            {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="property-box-4">
+                        <div class="thumbnail_inner">
+                            <div class="thumbnail">
+                                <img src="~/images/sanpham/@sanPham.Img1" alt="@sanPham.TieuDeSanpham">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="inner">
+                                <div class="portfolio_heading">
+                                    <h4 class="title">
+                                        <a href="@Url.Action("ChiTietSanPham", "SanPhams", new { id = sanPham.IdSanpham })">@sanPham.TieuDeSanpham</a>
+                                    </h4>
+                                    <div class="category_list">
+                                        <a href="properties-details.html">
+                                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps">Địa chỉ: @sanPham.DiaChi</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio_hover">
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <i class="flaticon-bed">Diện tích: @sanPham.DienTich</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-bath">Loại BĐS: @sanPham.IdLoaibds</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-square-layouting-with-black-square-in-east-area">Ngày đăng: @sanPham.NgayDang?.ToString("dd/MM/yyyy")</i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="transparent_link" href="Chi-Tiet-San-Pham"></a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Recent Properties end -->
+<!-- Kết Thúc Danh Mục Sản Phẩm Nổi Bật -->
+<!-- Services 2 start -->
+<div class="services-2 overview-bgi">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 align-self-center wow fadeInLeft delay-04s">
+                <div class="main-title main-title-2">
+                    <h1>Tại sao chọn chúng tôi?</h1>
+                    <p>Luôn lắng nghe, thấu hiểu và đáp ứng mọi nhu cầu của khách hàng một cách tốt nhất, Áp dụng hệ thống quản lý hiện đại, đảm bảo quy trình làm việc chuyên nghiệp và hiệu quả..</p>
+                    <a href="services.html" class="important-btn btn-5">Xem thêm chi tiết</a>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1 wow fadeInRight delay-04s">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="services-info">
+                            <div class="number">1</div>
+                            <div class="icon">
+                                <i class="flaticon-hotel-building"></i>
+                            </div>
+                            <div class="detail">
+                                <h3>
+                                    <a href="services.html">Căn hộ</a>
+                                </h3>
+                                <p> Cung cấp đa dạng căn hộ,vị trí đắc địa, đầy đủ tiện ích, đáp ứng mọi nhu cầu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="services-info">
+                            <div class="number">2</div>
+                            <div class="icon">
+                                <i class="flaticon-house"></i>
+                            </div>
+                            <div class="detail">
+                                <h3>
+                                    <a href="services.html">Nhà riêng</a>
+                                </h3>
+                                <p>Biến ước mơ thành hiện thực với đa dạng lựa chọn nhà ở, mang đến cuộc sống tiện nghi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="services-info">
+                            <div class="number">3</div>
+                            <div class="icon">
+                                <i class="flaticon-call-center-agent"></i>
+                            </div>
+                            <div class="detail">
+                                <h3>
+                                    <a href="services.html">Hỗ trợ 24/7</a>
+                                </h3>
+                                <p>Đội ngũ chuyên viên sẵn sàng giải đáp mọi thắc mắc, Dịch vụ chu đáo, tận tâm, hỗ trợ 24/7.                         </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="services-info">
+                            <div class="number">4</div>
+                            <div class="icon">
+                                <i class="flaticon-office-block"></i>
+                            </div>
+                            <div class="detail">
+                                <h3>
+                                    <a href="services.html">Thương mại</a>
+                                </h3>
+                                <p>"Tối ưu hóa hoạt động kinh doanh, gia tăng lợi nhuận, chinh phục thành công trong kinh doanh."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services 2 end -->
+<!--------------------------------------------------- Danh Sách sản phẩm Loại Chung Cư  ------------------------------------------------------------------------------->
+<!-- Recent Properties start -->
+<div class="recent-properties content-area-2">
+    <div class="container">
+        <div class="main-title">
+            <h1>@Model.TenLoaiNhaChungCu</h1>
+            <p>Những mẫu nhà siêu Đẹp.</p>
+       </ul>
+        </div>
+        <div class="row">
+            @foreach (var sanPham in Model.SanPhamNhaChungCu)
+            {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="property-box-4">
+                        <div class="thumbnail_inner">
+                            <div class="thumbnail">
+                                <img src="~/images/sanpham/@sanPham.Img1" alt="@sanPham.TieuDeSanpham">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="inner">
+                                <div class="portfolio_heading">
+                                    <h4 class="title">
+                                        <a href="@Url.Action("ChiTietSanPham", "SanPhams", new { id = sanPham.IdSanpham })">@sanPham.TieuDeSanpham</a>
+                                    </h4>
+                                    <div class="category_list">
+                                        <a href="properties-details.html">
+                                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps">Địa chỉ: @sanPham.DiaChi</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio_hover">
+                                    <ul class="facilities-list clearfix">
+                                        <li>
+                                            <i class="flaticon-bed">Diện tích: @sanPham.DienTich</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-bath">Loại BĐS: @sanPham.IdLoaibds</i>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-square-layouting-with-black-square-in-east-area">Ngày đăng: @sanPham.NgayDang?.ToString("dd/MM/yyyy")</i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="transparent_link" href="Chi-Tiet-San-Pham"></a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Recent Properties end -->

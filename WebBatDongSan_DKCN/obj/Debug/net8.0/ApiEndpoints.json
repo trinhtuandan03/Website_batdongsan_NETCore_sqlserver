@@ -1,0 +1,3303 @@
+[
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBaiVietEndpoints\u003Eb__0_0",
+    "RelativePath": "api/BaiViet/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.BaiViet, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "BaiViet"
+    ],
+    "EndpointName": "GetAllBaiViets"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBaiVietEndpoints\u003Eb__0_3",
+    "RelativePath": "api/BaiViet/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "baiViet",
+        "Type": "WebBatDongSan_DKCN.Models.BaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.BaiViet",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "BaiViet"
+    ],
+    "EndpointName": "CreateBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBaiVietEndpoints\u003Eb__0_1",
+    "RelativePath": "api/BaiViet/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.BaiViet",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BaiViet"
+    ],
+    "EndpointName": "GetBaiVietById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBaiVietEndpoints\u003Eb__0_2",
+    "RelativePath": "api/BaiViet/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "baiViet",
+        "Type": "WebBatDongSan_DKCN.Models.BaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BaiViet"
+    ],
+    "EndpointName": "UpdateBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBaiVietEndpoints\u003Eb__0_4",
+    "RelativePath": "api/BaiViet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BaiViet"
+    ],
+    "EndpointName": "DeleteBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BinhLuanEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBinhLuanEndpoints\u003Eb__0_0",
+    "RelativePath": "api/BinhLuan/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.BinhLuan, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "BinhLuan"
+    ],
+    "EndpointName": "GetAllBinhLuans"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BinhLuanEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBinhLuanEndpoints\u003Eb__0_3",
+    "RelativePath": "api/BinhLuan/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "binhLuan",
+        "Type": "WebBatDongSan_DKCN.Models.BinhLuan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.BinhLuan",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "BinhLuan"
+    ],
+    "EndpointName": "CreateBinhLuan"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BinhLuanEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBinhLuanEndpoints\u003Eb__0_1",
+    "RelativePath": "api/BinhLuan/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbinhluan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.BinhLuan",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BinhLuan"
+    ],
+    "EndpointName": "GetBinhLuanById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BinhLuanEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBinhLuanEndpoints\u003Eb__0_2",
+    "RelativePath": "api/BinhLuan/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbinhluan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "binhLuan",
+        "Type": "WebBatDongSan_DKCN.Models.BinhLuan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BinhLuan"
+    ],
+    "EndpointName": "UpdateBinhLuan"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.BinhLuanEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBinhLuanEndpoints\u003Eb__0_4",
+    "RelativePath": "api/BinhLuan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idbinhluan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "BinhLuan"
+    ],
+    "EndpointName": "DeleteBinhLuan"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.DuongPhoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDuongPhoEndpoints\u003Eb__0_0",
+    "RelativePath": "api/DuongPho/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.DuongPho, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "DuongPho"
+    ],
+    "EndpointName": "GetAllDuongPhos"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.DuongPhoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDuongPhoEndpoints\u003Eb__0_3",
+    "RelativePath": "api/DuongPho/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "duongPho",
+        "Type": "WebBatDongSan_DKCN.Models.DuongPho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.DuongPho",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "DuongPho"
+    ],
+    "EndpointName": "CreateDuongPho"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.DuongPhoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDuongPhoEndpoints\u003Eb__0_1",
+    "RelativePath": "api/DuongPho/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idduongpho",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.DuongPho",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "DuongPho"
+    ],
+    "EndpointName": "GetDuongPhoById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.DuongPhoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDuongPhoEndpoints\u003Eb__0_2",
+    "RelativePath": "api/DuongPho/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idduongpho",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "duongPho",
+        "Type": "WebBatDongSan_DKCN.Models.DuongPho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "DuongPho"
+    ],
+    "EndpointName": "UpdateDuongPho"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.DuongPhoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDuongPhoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/DuongPho/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idduongpho",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "DuongPho"
+    ],
+    "EndpointName": "DeleteDuongPho"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.GiayToTaiLieuEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGiayToTaiLieuEndpoints\u003Eb__0_0",
+    "RelativePath": "api/GiayToTaiLieu/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.GiayToTaiLieu, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "GiayToTaiLieu"
+    ],
+    "EndpointName": "GetAllGiayToTaiLieus"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.GiayToTaiLieuEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGiayToTaiLieuEndpoints\u003Eb__0_3",
+    "RelativePath": "api/GiayToTaiLieu/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "giayToTaiLieu",
+        "Type": "WebBatDongSan_DKCN.Models.GiayToTaiLieu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.GiayToTaiLieu",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "GiayToTaiLieu"
+    ],
+    "EndpointName": "CreateGiayToTaiLieu"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.GiayToTaiLieuEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGiayToTaiLieuEndpoints\u003Eb__0_1",
+    "RelativePath": "api/GiayToTaiLieu/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaytotailieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.GiayToTaiLieu",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "GiayToTaiLieu"
+    ],
+    "EndpointName": "GetGiayToTaiLieuById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.GiayToTaiLieuEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGiayToTaiLieuEndpoints\u003Eb__0_2",
+    "RelativePath": "api/GiayToTaiLieu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaytotailieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "giayToTaiLieu",
+        "Type": "WebBatDongSan_DKCN.Models.GiayToTaiLieu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "GiayToTaiLieu"
+    ],
+    "EndpointName": "UpdateGiayToTaiLieu"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.GiayToTaiLieuEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGiayToTaiLieuEndpoints\u003Eb__0_4",
+    "RelativePath": "api/GiayToTaiLieu/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaytotailieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "GiayToTaiLieu"
+    ],
+    "EndpointName": "DeleteGiayToTaiLieu"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LichSuGiaoDichEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLichSuGiaoDichEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LichSuGiaoDich/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LichSuGiaoDich, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LichSuGiaoDich"
+    ],
+    "EndpointName": "GetAllLichSuGiaoDiches"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LichSuGiaoDichEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLichSuGiaoDichEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LichSuGiaoDich/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lichSuGiaoDich",
+        "Type": "WebBatDongSan_DKCN.Models.LichSuGiaoDich",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LichSuGiaoDich",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LichSuGiaoDich"
+    ],
+    "EndpointName": "CreateLichSuGiaoDich"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LichSuGiaoDichEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLichSuGiaoDichEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LichSuGiaoDich/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaodich",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LichSuGiaoDich",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LichSuGiaoDich"
+    ],
+    "EndpointName": "GetLichSuGiaoDichById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LichSuGiaoDichEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLichSuGiaoDichEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LichSuGiaoDich/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaodich",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lichSuGiaoDich",
+        "Type": "WebBatDongSan_DKCN.Models.LichSuGiaoDich",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LichSuGiaoDich"
+    ],
+    "EndpointName": "UpdateLichSuGiaoDich"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LichSuGiaoDichEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLichSuGiaoDichEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LichSuGiaoDich/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idgiaodich",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LichSuGiaoDich"
+    ],
+    "EndpointName": "DeleteLichSuGiaoDich"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LienHeEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLienHeEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LienHe/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LienHe, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LienHe"
+    ],
+    "EndpointName": "GetAllLienHes"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LienHeEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLienHeEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LienHe/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lienHe",
+        "Type": "WebBatDongSan_DKCN.Models.LienHe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LienHe",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LienHe"
+    ],
+    "EndpointName": "CreateLienHe"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LienHeEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLienHeEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LienHe/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idlienhe",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LienHe",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LienHe"
+    ],
+    "EndpointName": "GetLienHeById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LienHeEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLienHeEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LienHe/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idlienhe",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lienHe",
+        "Type": "WebBatDongSan_DKCN.Models.LienHe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LienHe"
+    ],
+    "EndpointName": "UpdateLienHe"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LienHeEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLienHeEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LienHe/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idlienhe",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LienHe"
+    ],
+    "EndpointName": "DeleteLienHe"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBaiVietEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LoaiBaiViet/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LoaiBaiViet, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LoaiBaiViet"
+    ],
+    "EndpointName": "GetAllLoaiBaiViets"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBaiVietEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LoaiBaiViet/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiBaiViet",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBaiViet",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LoaiBaiViet"
+    ],
+    "EndpointName": "CreateLoaiBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBaiVietEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LoaiBaiViet/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBaiViet",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBaiViet"
+    ],
+    "EndpointName": "GetLoaiBaiVietById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBaiVietEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LoaiBaiViet/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loaiBaiViet",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBaiViet"
+    ],
+    "EndpointName": "UpdateLoaiBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBaiVietEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBaiVietEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LoaiBaiViet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibaiviet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBaiViet"
+    ],
+    "EndpointName": "DeleteLoaiBaiViet"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBdEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBdEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LoaiBd/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LoaiBd, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LoaiBd"
+    ],
+    "EndpointName": "GetAllLoaiBds"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBdEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBdEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LoaiBd/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiBd",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBd",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LoaiBd"
+    ],
+    "EndpointName": "CreateLoaiBd"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBdEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBdEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LoaiBd/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibds",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBd",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBd"
+    ],
+    "EndpointName": "GetLoaiBdById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBdEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBdEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LoaiBd/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibds",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loaiBd",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiBd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBd"
+    ],
+    "EndpointName": "UpdateLoaiBd"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiBdEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiBdEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LoaiBd/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaibds",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiBd"
+    ],
+    "EndpointName": "DeleteLoaiBd"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTaiKhoanUserEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTaiKhoanUserEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LoaiTaiKhoanUser/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LoaiTaiKhoanUser"
+    ],
+    "EndpointName": "GetAllLoaiTaiKhoanUsers"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTaiKhoanUserEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTaiKhoanUserEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LoaiTaiKhoanUser/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiTaiKhoanUser",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LoaiTaiKhoanUser"
+    ],
+    "EndpointName": "CreateLoaiTaiKhoanUser"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTaiKhoanUserEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTaiKhoanUserEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LoaiTaiKhoanUser/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTaiKhoanUser"
+    ],
+    "EndpointName": "GetLoaiTaiKhoanUserById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTaiKhoanUserEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTaiKhoanUserEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LoaiTaiKhoanUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loaiTaiKhoanUser",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTaiKhoanUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTaiKhoanUser"
+    ],
+    "EndpointName": "UpdateLoaiTaiKhoanUser"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTaiKhoanUserEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTaiKhoanUserEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LoaiTaiKhoanUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTaiKhoanUser"
+    ],
+    "EndpointName": "DeleteLoaiTaiKhoanUser"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTinEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTinEndpoints\u003Eb__0_0",
+    "RelativePath": "api/LoaiTin/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.LoaiTin, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "LoaiTin"
+    ],
+    "EndpointName": "GetAllLoaiTins"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTinEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTinEndpoints\u003Eb__0_3",
+    "RelativePath": "api/LoaiTin/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiTin",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTin",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "LoaiTin"
+    ],
+    "EndpointName": "CreateLoaiTin"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTinEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTinEndpoints\u003Eb__0_1",
+    "RelativePath": "api/LoaiTin/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitin",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTin",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTin"
+    ],
+    "EndpointName": "GetLoaiTinById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTinEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTinEndpoints\u003Eb__0_2",
+    "RelativePath": "api/LoaiTin/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitin",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loaiTin",
+        "Type": "WebBatDongSan_DKCN.Models.LoaiTin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTin"
+    ],
+    "EndpointName": "UpdateLoaiTin"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.LoaiTinEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapLoaiTinEndpoints\u003Eb__0_4",
+    "RelativePath": "api/LoaiTin/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaitin",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "LoaiTin"
+    ],
+    "EndpointName": "DeleteLoaiTin"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoCreatePaymentResponseEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoCreatePaymentResponseEndpoints\u003Eb__0_0",
+    "RelativePath": "api/MomoCreatePaymentResponse/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "MomoCreatePaymentResponse"
+    ],
+    "EndpointName": "GetAllMomoCreatePaymentResponses"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoCreatePaymentResponseEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoCreatePaymentResponseEndpoints\u003Eb__0_3",
+    "RelativePath": "api/MomoCreatePaymentResponse/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "momoCreatePaymentResponse",
+        "Type": "WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "MomoCreatePaymentResponse"
+    ],
+    "EndpointName": "CreateMomoCreatePaymentResponse"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoCreatePaymentResponseEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoCreatePaymentResponseEndpoints\u003Eb__0_1",
+    "RelativePath": "api/MomoCreatePaymentResponse/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomocreatepayment",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoCreatePaymentResponse"
+    ],
+    "EndpointName": "GetMomoCreatePaymentResponseById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoCreatePaymentResponseEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoCreatePaymentResponseEndpoints\u003Eb__0_2",
+    "RelativePath": "api/MomoCreatePaymentResponse/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomocreatepayment",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "momoCreatePaymentResponse",
+        "Type": "WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoCreatePaymentResponse"
+    ],
+    "EndpointName": "UpdateMomoCreatePaymentResponse"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoCreatePaymentResponseEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoCreatePaymentResponseEndpoints\u003Eb__0_4",
+    "RelativePath": "api/MomoCreatePaymentResponse/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomocreatepayment",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoCreatePaymentResponse"
+    ],
+    "EndpointName": "DeleteMomoCreatePaymentResponse"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoOptionEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoOptionEndpoints\u003Eb__0_0",
+    "RelativePath": "api/MomoOption/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.MomoOption, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "MomoOption"
+    ],
+    "EndpointName": "GetAllMomoOptions"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoOptionEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoOptionEndpoints\u003Eb__0_3",
+    "RelativePath": "api/MomoOption/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "momoOption",
+        "Type": "WebBatDongSan_DKCN.Models.MomoOption",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.MomoOption",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "MomoOption"
+    ],
+    "EndpointName": "CreateMomoOption"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoOptionEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoOptionEndpoints\u003Eb__0_1",
+    "RelativePath": "api/MomoOption/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomooption",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.MomoOption",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoOption"
+    ],
+    "EndpointName": "GetMomoOptionById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoOptionEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoOptionEndpoints\u003Eb__0_2",
+    "RelativePath": "api/MomoOption/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomooption",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "momoOption",
+        "Type": "WebBatDongSan_DKCN.Models.MomoOption",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoOption"
+    ],
+    "EndpointName": "UpdateMomoOption"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.MomoOptionEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMomoOptionEndpoints\u003Eb__0_4",
+    "RelativePath": "api/MomoOption/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idmomooption",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "MomoOption"
+    ],
+    "EndpointName": "DeleteMomoOption"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.NguoiDungEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNguoiDungEndpoints\u003Eb__0_0",
+    "RelativePath": "api/NguoiDung/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.NguoiDung, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "NguoiDung"
+    ],
+    "EndpointName": "GetAllNguoiDungs"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.NguoiDungEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNguoiDungEndpoints\u003Eb__0_3",
+    "RelativePath": "api/NguoiDung/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nguoiDung",
+        "Type": "WebBatDongSan_DKCN.Models.NguoiDung",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.NguoiDung",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "NguoiDung"
+    ],
+    "EndpointName": "CreateNguoiDung"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.NguoiDungEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNguoiDungEndpoints\u003Eb__0_1",
+    "RelativePath": "api/NguoiDung/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iduser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.NguoiDung",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "NguoiDung"
+    ],
+    "EndpointName": "GetNguoiDungById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.NguoiDungEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNguoiDungEndpoints\u003Eb__0_2",
+    "RelativePath": "api/NguoiDung/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iduser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nguoiDung",
+        "Type": "WebBatDongSan_DKCN.Models.NguoiDung",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "NguoiDung"
+    ],
+    "EndpointName": "UpdateNguoiDung"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.NguoiDungEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNguoiDungEndpoints\u003Eb__0_4",
+    "RelativePath": "api/NguoiDung/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iduser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "NguoiDung"
+    ],
+    "EndpointName": "DeleteNguoiDung"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhanHoiNapTienMomoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhanHoiNapTienMomoEndpoints\u003Eb__0_0",
+    "RelativePath": "api/PhanHoiNapTienMomo/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "PhanHoiNapTienMomo"
+    ],
+    "EndpointName": "GetAllPhanHoiNapTienMomos"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhanHoiNapTienMomoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhanHoiNapTienMomoEndpoints\u003Eb__0_3",
+    "RelativePath": "api/PhanHoiNapTienMomo/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phanHoiNapTienMomo",
+        "Type": "WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "PhanHoiNapTienMomo"
+    ],
+    "EndpointName": "CreatePhanHoiNapTienMomo"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhanHoiNapTienMomoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhanHoiNapTienMomoEndpoints\u003Eb__0_1",
+    "RelativePath": "api/PhanHoiNapTienMomo/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphanhoinaptienmomo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhanHoiNapTienMomo"
+    ],
+    "EndpointName": "GetPhanHoiNapTienMomoById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhanHoiNapTienMomoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhanHoiNapTienMomoEndpoints\u003Eb__0_2",
+    "RelativePath": "api/PhanHoiNapTienMomo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphanhoinaptienmomo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phanHoiNapTienMomo",
+        "Type": "WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhanHoiNapTienMomo"
+    ],
+    "EndpointName": "UpdatePhanHoiNapTienMomo"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhanHoiNapTienMomoEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhanHoiNapTienMomoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/PhanHoiNapTienMomo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphanhoinaptienmomo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhanHoiNapTienMomo"
+    ],
+    "EndpointName": "DeletePhanHoiNapTienMomo"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongHuongEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongHuongEndpoints\u003Eb__0_0",
+    "RelativePath": "api/PhuongHuong/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.PhuongHuong, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "PhuongHuong"
+    ],
+    "EndpointName": "GetAllPhuongHuongs"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongHuongEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongHuongEndpoints\u003Eb__0_3",
+    "RelativePath": "api/PhuongHuong/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phuongHuong",
+        "Type": "WebBatDongSan_DKCN.Models.PhuongHuong",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhuongHuong",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "PhuongHuong"
+    ],
+    "EndpointName": "CreatePhuongHuong"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongHuongEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongHuongEndpoints\u003Eb__0_1",
+    "RelativePath": "api/PhuongHuong/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuonghuong",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhuongHuong",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongHuong"
+    ],
+    "EndpointName": "GetPhuongHuongById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongHuongEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongHuongEndpoints\u003Eb__0_2",
+    "RelativePath": "api/PhuongHuong/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuonghuong",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phuongHuong",
+        "Type": "WebBatDongSan_DKCN.Models.PhuongHuong",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongHuong"
+    ],
+    "EndpointName": "UpdatePhuongHuong"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongHuongEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongHuongEndpoints\u003Eb__0_4",
+    "RelativePath": "api/PhuongHuong/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuonghuong",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongHuong"
+    ],
+    "EndpointName": "DeletePhuongHuong"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongXaEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongXaEndpoints\u003Eb__0_0",
+    "RelativePath": "api/PhuongXa/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.PhuongXa, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "PhuongXa"
+    ],
+    "EndpointName": "GetAllPhuongXas"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongXaEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongXaEndpoints\u003Eb__0_3",
+    "RelativePath": "api/PhuongXa/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phuongXa",
+        "Type": "WebBatDongSan_DKCN.Models.PhuongXa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhuongXa",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "PhuongXa"
+    ],
+    "EndpointName": "CreatePhuongXa"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongXaEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongXaEndpoints\u003Eb__0_1",
+    "RelativePath": "api/PhuongXa/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuongxa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.PhuongXa",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongXa"
+    ],
+    "EndpointName": "GetPhuongXaById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongXaEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongXaEndpoints\u003Eb__0_2",
+    "RelativePath": "api/PhuongXa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuongxa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phuongXa",
+        "Type": "WebBatDongSan_DKCN.Models.PhuongXa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongXa"
+    ],
+    "EndpointName": "UpdatePhuongXa"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.PhuongXaEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPhuongXaEndpoints\u003Eb__0_4",
+    "RelativePath": "api/PhuongXa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphuongxa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "PhuongXa"
+    ],
+    "EndpointName": "DeletePhuongXa"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.QuanHuyenEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuanHuyenEndpoints\u003Eb__0_0",
+    "RelativePath": "api/QuanHuyen/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.QuanHuyen, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "QuanHuyen"
+    ],
+    "EndpointName": "GetAllQuanHuyens"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.QuanHuyenEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuanHuyenEndpoints\u003Eb__0_3",
+    "RelativePath": "api/QuanHuyen/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanHuyen",
+        "Type": "WebBatDongSan_DKCN.Models.QuanHuyen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.QuanHuyen",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "QuanHuyen"
+    ],
+    "EndpointName": "CreateQuanHuyen"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.QuanHuyenEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuanHuyenEndpoints\u003Eb__0_1",
+    "RelativePath": "api/QuanHuyen/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idquanhuyen",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.QuanHuyen",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "QuanHuyen"
+    ],
+    "EndpointName": "GetQuanHuyenById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.QuanHuyenEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuanHuyenEndpoints\u003Eb__0_2",
+    "RelativePath": "api/QuanHuyen/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idquanhuyen",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "quanHuyen",
+        "Type": "WebBatDongSan_DKCN.Models.QuanHuyen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "QuanHuyen"
+    ],
+    "EndpointName": "UpdateQuanHuyen"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.QuanHuyenEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuanHuyenEndpoints\u003Eb__0_4",
+    "RelativePath": "api/QuanHuyen/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idquanhuyen",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "QuanHuyen"
+    ],
+    "EndpointName": "DeleteQuanHuyen"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.SanPhamEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSanPhamEndpoints\u003Eb__0_0",
+    "RelativePath": "api/SanPham/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.SanPham, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "SanPham"
+    ],
+    "EndpointName": "GetAllSanPhams"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.SanPhamEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSanPhamEndpoints\u003Eb__0_3",
+    "RelativePath": "api/SanPham/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPham",
+        "Type": "WebBatDongSan_DKCN.Models.SanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.SanPham",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "SanPham"
+    ],
+    "EndpointName": "CreateSanPham"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.SanPhamEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSanPhamEndpoints\u003Eb__0_1",
+    "RelativePath": "api/SanPham/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idsanpham",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.SanPham",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "SanPham"
+    ],
+    "EndpointName": "GetSanPhamById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.SanPhamEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSanPhamEndpoints\u003Eb__0_2",
+    "RelativePath": "api/SanPham/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idsanpham",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPham",
+        "Type": "WebBatDongSan_DKCN.Models.SanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "SanPham"
+    ],
+    "EndpointName": "UpdateSanPham"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.SanPhamEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSanPhamEndpoints\u003Eb__0_4",
+    "RelativePath": "api/SanPham/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idsanpham",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "SanPham"
+    ],
+    "EndpointName": "DeleteSanPham"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.ThongTinGiaoDichNapTienEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapThongTinGiaoDichNapTienEndpoints\u003Eb__0_0",
+    "RelativePath": "api/ThongTinGiaoDichNapTien/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "ThongTinGiaoDichNapTien"
+    ],
+    "EndpointName": "GetAllThongTinGiaoDichNapTiens"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.ThongTinGiaoDichNapTienEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapThongTinGiaoDichNapTienEndpoints\u003Eb__0_3",
+    "RelativePath": "api/ThongTinGiaoDichNapTien/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "thongTinGiaoDichNapTien",
+        "Type": "WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "ThongTinGiaoDichNapTien"
+    ],
+    "EndpointName": "CreateThongTinGiaoDichNapTien"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.ThongTinGiaoDichNapTienEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapThongTinGiaoDichNapTienEndpoints\u003Eb__0_1",
+    "RelativePath": "api/ThongTinGiaoDichNapTien/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idthongtingiaodichnaptien",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "ThongTinGiaoDichNapTien"
+    ],
+    "EndpointName": "GetThongTinGiaoDichNapTienById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.ThongTinGiaoDichNapTienEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapThongTinGiaoDichNapTienEndpoints\u003Eb__0_2",
+    "RelativePath": "api/ThongTinGiaoDichNapTien/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idthongtingiaodichnaptien",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "thongTinGiaoDichNapTien",
+        "Type": "WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "ThongTinGiaoDichNapTien"
+    ],
+    "EndpointName": "UpdateThongTinGiaoDichNapTien"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.ThongTinGiaoDichNapTienEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapThongTinGiaoDichNapTienEndpoints\u003Eb__0_4",
+    "RelativePath": "api/ThongTinGiaoDichNapTien/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idthongtingiaodichnaptien",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "ThongTinGiaoDichNapTien"
+    ],
+    "EndpointName": "DeleteThongTinGiaoDichNapTien"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TinhThanhEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTinhThanhEndpoints\u003Eb__0_0",
+    "RelativePath": "api/TinhThanh/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.TinhThanh, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "TinhThanh"
+    ],
+    "EndpointName": "GetAllTinhThanhs"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TinhThanhEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTinhThanhEndpoints\u003Eb__0_3",
+    "RelativePath": "api/TinhThanh/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tinhThanh",
+        "Type": "WebBatDongSan_DKCN.Models.TinhThanh",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.TinhThanh",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "TinhThanh"
+    ],
+    "EndpointName": "CreateTinhThanh"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TinhThanhEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTinhThanhEndpoints\u003Eb__0_1",
+    "RelativePath": "api/TinhThanh/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtinhthanh",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.TinhThanh",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TinhThanh"
+    ],
+    "EndpointName": "GetTinhThanhById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TinhThanhEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTinhThanhEndpoints\u003Eb__0_2",
+    "RelativePath": "api/TinhThanh/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtinhthanh",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tinhThanh",
+        "Type": "WebBatDongSan_DKCN.Models.TinhThanh",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TinhThanh"
+    ],
+    "EndpointName": "UpdateTinhThanh"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TinhThanhEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTinhThanhEndpoints\u003Eb__0_4",
+    "RelativePath": "api/TinhThanh/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtinhthanh",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TinhThanh"
+    ],
+    "EndpointName": "DeleteTinhThanh"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TrangThaiEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTrangThaiEndpoints\u003Eb__0_0",
+    "RelativePath": "api/TrangThai/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBatDongSan_DKCN.Models.TrangThai, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "TrangThai"
+    ],
+    "EndpointName": "GetAllTrangThais"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TrangThaiEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTrangThaiEndpoints\u003Eb__0_3",
+    "RelativePath": "api/TrangThai/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangThai",
+        "Type": "WebBatDongSan_DKCN.Models.TrangThai",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.TrangThai",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "TrangThai"
+    ],
+    "EndpointName": "CreateTrangThai"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TrangThaiEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTrangThaiEndpoints\u003Eb__0_1",
+    "RelativePath": "api/TrangThai/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtrangthai",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBatDongSan_DKCN.Models.TrangThai",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TrangThai"
+    ],
+    "EndpointName": "GetTrangThaiById"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TrangThaiEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTrangThaiEndpoints\u003Eb__0_2",
+    "RelativePath": "api/TrangThai/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtrangthai",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThai",
+        "Type": "WebBatDongSan_DKCN.Models.TrangThai",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TrangThai"
+    ],
+    "EndpointName": "UpdateTrangThai"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DKCN.Controllers.Api.TrangThaiEndpointsAPI\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTrangThaiEndpoints\u003Eb__0_4",
+    "RelativePath": "api/TrangThai/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idtrangthai",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "TrangThai"
+    ],
+    "EndpointName": "DeleteTrangThai"
+  },
+  {
+    "ContainingType": "WebBatDongSan_DK.Controllers.HomeController",
+    "Method": "CreatePaymentUrl",
+    "RelativePath": "CreatePaymentUrl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdThongTinGiaoDichNapTien",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderInfo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUser",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.IdUser",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.TenTruyCap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.MatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.HoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.Sdt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LoaiTaiKhoanId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.NgayDangky",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.SoTien",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.BaiViets",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.BaiViet, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.BinhLuans",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.BinhLuan, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LichSuGiaoDiches",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.LichSuGiaoDich, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LienHes",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.LienHe, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LoaiTaiKhoan.IdLoaitk",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LoaiTaiKhoan.TenLoaitk",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.LoaiTaiKhoan.NguoiDungs",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.NguoiDung, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.MomoCreatePaymentResponses",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.MomoCreatePaymentResponse, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.MomoOptions",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.MomoOption, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.PhanHoiNapTienMomos",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.PhanHoiNapTienMomo, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.SanPhams",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.SanPham, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdUserNavigation.ThongTinGiaoDichNapTiens",
+        "Type": "System.Collections.Generic.ICollection\u00601[[WebBatDongSan_DKCN.Models.ThongTinGiaoDichNapTien, WebBatDongSan_DKCN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

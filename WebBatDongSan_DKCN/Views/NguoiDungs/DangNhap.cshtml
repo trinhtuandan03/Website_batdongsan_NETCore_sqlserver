@@ -1,0 +1,64 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.NguoiDungsViewModel
+
+@{
+    ViewData["Title"] = "Trang Đăng Nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Bắt Đầu Đăng Nhập tài Khoản -->
+<div class="contact-section">
+    <div class="container-fluid">
+        <div class="row login-box">
+            <div class="col-lg-6 align-self-center pad-0 form-section">
+                <div class="form-inner">
+                    <a href="dang-nhap" class="logos">
+                    </a>
+                    <h3>Đăng Nhập Tài Khoản Của Bạn</h3>
+                    <form asp-controller="NguoiDungs" asp-action="DangNhap" method="POST">
+                        <div class="form-group form-box">
+                            <input class="form-control" asp-for="DangKy.TenTruyCap"
+                                   placeholder="Nhập tên đăng nhập" autofocus required />
+                            <span asp-validation-for="DangKy.TenTruyCap" class="text-danger"></span>
+                        </div>
+                        <div class="form-group form-box">
+                            <input class="form-control" asp-for="DangKy.MatKhau"
+                                   type="password" placeholder="Nhập mật khẩu" required />
+                            <span asp-validation-for="DangKy.MatKhau" class="text-danger"></span>
+                        </div>
+                        <div class="checkbox form-group clearfix">
+                            <div class="form-check checkbox-theme">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">
+                                    Ghi nhớ đăng nhập
+                                </label>
+                            </div>
+                            <a href="forgot-password.html" class="forgot-password">Quên mật khẩu</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-4 btn-block">Đăng nhập</button>
+                        </div>
+
+                        <div class="extra-login form-group clearfix">
+                            <span>Hoặc đăng nhập với</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <ul class="social-list clearfix">
+                            <li><a href="#" class="facebook-bg">Facebook</a></li>
+                            <li><a href="#" class="twitter-bg">Twitter</a></li>
+                            <li><a href="#" class="google-bg">Google</a></li>
+                        </ul>
+                    </form>
+                    <div class="clearfix"></div>
+                    <p>Chưa có tài khoản? <a href="dang-ky" class="thembo"> Đăng ký ngay</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 bg-color-15 pad-0 none-992 bg-img">
+                <div class="info clearfix">
+                    <h1>Chào mừng bạn đến với <a href="/">DanKhanh</a></h1>
+                    <p>"Xây dựng website Bất động Sản D&K", chúng tôi cam kết tạo ra một nền tảng trải nghiệm tốt nhất cho người dùng từ tìm kiếm đến giao dịch. Hy vọng D&K trở thành điểm đến hàng đầu cho mọi người khi nói đến mua bán bất động sản trực tuyến. Hãy cùng chúng tôi xây dựng và phát triển nơi giấc mơ về ngôi nhà hoàn hảo trở thành hiện thực!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Kết Thúc Đăng Nhập tài Khoản  -->

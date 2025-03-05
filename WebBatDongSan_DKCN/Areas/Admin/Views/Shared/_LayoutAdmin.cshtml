@@ -1,0 +1,427 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using System.Security.Claims
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com//polygon/concept/pages/chart-chartist.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 18:13:23 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/admin/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="~/admin/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/admin/assets/libs/css/style.css">
+    <link rel="stylesheet" href="~/admin/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="~/admin/assets/vendor/charts/chartist-bundle/chartist.css">
+    <title>Website Bất Động Sản Đk</title>
+    <meta name="robots" content="noindex, nofollow">
+    <script nonce="bea0a831-0822-4b06-8312-50544fd9fd85">try { (function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz._v = "5671"; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "https://colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
+</head>
+<body>
+    <div class="dashboard-main-wrapper">
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="/Admin/HomeAD/Index">Website Bất Động Sản Đk</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="https://colorlib.com//polygon/concept/assets/images/avatar-2.jpg" alt class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block">
+                                                        <span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>                   
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                            <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                <li class="connection-list">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/github.png" alt> <span>Github</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/dribbble.png" alt> <span>Dribbble</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/dropbox.png" alt> <span>Dropbox</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/bitbucket.png" alt> <span>Bitbucket</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/mail_chimp.png" alt><span>Mail chimp</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="https://colorlib.com//polygon/concept/assets/images/slack.png" alt> <span>Slack</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="conntection-footer"><a href="#">More</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                    @if (User.Identity.IsAuthenticated){
+                        var hoTen = User.FindFirst(ClaimTypes.Name)?.Value;
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true">
+                                <img src="https://colorlib.com//polygon/concept/assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"> @hoTen
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">@hoTen</h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="dang-xuat"><i class="fas fa-power-off mr-2"></i>Đăng Xuất</a>
+                            </div>
+                        </li>
+                    }                     
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Quản Lý Hệ Thống
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-fw fa-file-alt"></i>Quản Lý Tài Khoản</a>
+                                <div id="submenu-1" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/NguoiDungsAD/Index">Danh Sách Tài Khoản</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LoaiTaiKhoanUsersAD/Index">Quản Lý Loại Tài Khoản</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                           
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-fw fa-file-alt"></i>Quản Lý Bài Viết</a>
+                                <div id="submenu-2" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/BaiVietsAD/Index">Danh Sách Bài Viết</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LoaiBaiVietsAD/Index">Quản Lý Loại Bài Viết</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/BinhLuansAD/Index">Quản Lý Bình Luận</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-box"></i>Quản Lý Sản Phẩm</a>
+                                <div id="submenu-3" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/SanPhamsAD/Index">Danh Sách Sản Phẩm</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-f fa-folder"></i>Quản Lý Giao Dịch</a>
+                                <div id="submenu-4" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/GiaoDichesAD/Index">Danh Sách Giao Dịch</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LoaiGiaoDichesAD/Index">Quản Lý Loại Giao Dịch</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-map-marker-alt"></i>Quản Lý Địa Lý</a>
+                                <div id="submenu-5" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/TinhThanhsAD/Index">Danh Sách Tỉnh Thành</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/QuanHuyensAD/Index">Danh Sách Quận Huyện</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/PhuongXasAD/Index">Danh Sách Phường Xã</a>
+                                        </li>                            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/DuongPhoesAD/Index">Danh Sách Đường Phố</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-list-alt"></i>Quản Lý Danh Mục</a>
+                                <div id="submenu-6" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LoaiTinsAD/Index">Quản Lý Loại Tin</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LoaiBdsAD/Index">Quản Lý Loại Bất Động Sản</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/MenusAD/Index">Quản Lý Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-file"></i>Quản Lý Thông Tin</a>
+                                <div id="submenu-7" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/LienHesAD/Index">Danh Sách Liên Hệ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/GiayToTaiLieuxAD/Index">Quản Lý Giấy Tờ Tài Liệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/MomoInfoesAD/Index">Quản Lý Momo Info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                           
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-compass"></i>Quản Lý Hướng Dẫn</a>
+                                <div id="submenu-8" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/PhuongHuongsAD/Index">Danh Sách Phương Hướng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="/Admin/TrangThaisAD/Index">Danh Sách Trạng Thái</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-divider">
+                                THỐNG KÊ
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-file"></i>Thống Kê 1  </a>
+                                <div id="submenu-7" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="#">Thống Kê</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-fw fa-inbox"></i>Thống Kê 2 <span class="badge badge-secondary">New</span></a>
+                                <div id="submenu-8" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="#">Inbox</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-11" aria-controls="submenu-11"><i class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
+                                <div id="submenu-10" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://360.gemskyworld.vn/">Google Maps</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="#">Vector Maps</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-12" aria-controls="submenu-12"><i class="fas fa-f fa-folder"></i>Menu Level</a>
+                                <div id="submenu-11" class="collapse submenu" style>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="#">Level 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-13" aria-controls="submenu-13">Level 2</a>
+                                            <div id="submenu-11" class="collapse submenu" style>
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#" data-url="#">Level 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#" data-url="#">Level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-url="#">Level 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="dashboard-wrapper">
+            <div class="container-fluid  dashboard-content">
+                <div id="main-content">
+                    @RenderBody()
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            © 2025 Công Ty Đan Khanh. Giữ bản quyền website này.
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://colorlib.com//polygon/concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://colorlib.com//polygon/concept/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://colorlib.com//polygon/concept/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="https://colorlib.com//polygon/concept/assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <script src="https://colorlib.com//polygon/concept/assets/vendor/charts/chartist-bundle/Chartistjs.js"></script>
+    <script src="https://colorlib.com//polygon/concept/assets/libs/js/main-js.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587" integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA==" data-cf-beacon='{"rayId":"88fa604b0e42715e","b":1,"version":"2024.4.1","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+    <script>
+        $(document).ready(function () {
+            // Lắng nghe sự kiện click trên các liên kết và nút trong sidebar và @RenderBody
+            $(document).on('click', '.nav-link, #main-content .btn', function (event) {
+                event.preventDefault(); // Ngăn hành động mặc định
+
+                // Lấy URL từ thuộc tính href hoặc asp-action
+                var url = $(this).data('url') || $(this).attr('href');
+
+                if (!url) {
+                    // Nếu không có href, kiểm tra nếu có asp-action
+                    var action = $(this).attr('asp-action');
+                    if (action) {
+                        // Tự tạo URL dựa trên action
+                        url = '/' + action;
+                    }
+                }
+
+                if (!url && $(this).attr('type') === 'submit') {
+                    // Nếu là nút submit, lấy action từ form bao quanh
+                    var form = $(this).closest('form');
+                    if (form.length > 0) {
+                        url = form.attr('action') || window.location.href; // Lấy action hoặc URL hiện tại
+                        var method = form.attr('method') || 'POST'; // Lấy phương thức (POST mặc định)
+
+                        // Gửi dữ liệu form qua AJAX
+                        $.ajax({
+                            url: url,
+                            type: method,
+                            data: form.serialize(), // Serialize dữ liệu từ form
+                            success: function (response) {
+                                // Thay thế nội dung trong #main-content
+                                var newContent = $(response).find('#main-content').html();
+                                $('#main-content').html(newContent); // Cập nhật nội dung mới
+                            },
+                            error: function () {
+                                alert('Lỗi khi gửi dữ liệu.');
+                            }
+                        });
+                        return; // Kết thúc nếu xử lý form
+                    }
+                }
+
+                if (url) {
+                    // Gửi yêu cầu AJAX đến URL (cho liên kết hoặc nút thông thường)
+                    $.ajax({
+                        url: url,
+                        type: 'GET',
+                        success: function (response) {
+                            // Chỉ thay thế nội dung trong #main-content
+                            var newContent = $(response).find('#main-content').html();
+                            $('#main-content').html(newContent); // Cập nhật nội dung mới
+                        },
+                        error: function () {
+                            alert('Lỗi khi tải nội dung.');
+                        }
+                    });
+                } else {
+                    console.error('Không thể xác định URL từ liên kết hoặc nút.');
+                }
+            });
+        });
+    </script>
+</body>
+<!-- Mirrored from colorlib.com//polygon/concept/pages/chart-chartist.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 18:13:24 GMT -->
+</html>
+

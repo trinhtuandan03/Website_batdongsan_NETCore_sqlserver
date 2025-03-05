@@ -1,0 +1,56 @@
+﻿@model WebBatDongSan_DKCN.Models.GiayToTaiLieu
+
+@{
+    ViewData["Title"] = "Xóa Giấy Tờ Tài Liệu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Xóa Giấy Tờ Tài Liệu</h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Giấy Tờ Tài Liệu</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Xóa Giấy Tờ Tài Liệu</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h3>Đây là thông tin chi tiết giấy tờ tài liệu hiện tại. Bạn có chắc chắn muốn xóa giấy tờ này không?</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Giấy Tờ Tài Liệu</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tên Giấy Tờ Tài Liệu -->
+                        <dt class="col-sm-3">Tên Giấy Tờ:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenGiaytoTailieu)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="IdGiaytoTailieu" />
+                        <button type="submit" class="btn btn-danger">Xóa Giấy Tờ</button>
+                        <a asp-action="Index" class="btn btn-primary">Quay lại danh sách</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

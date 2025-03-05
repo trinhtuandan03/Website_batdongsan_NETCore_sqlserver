@@ -1,0 +1,370 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.SanPhamsViewModel
+
+@{
+    ViewData["Title"] = "ThemSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1> Thêm Sản Phẩm</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Thêm Sản Phẩm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- User page start -->
+<div class="user-page submit-property content-area-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="notification-box mb-50">
+                    <h4>Bạn Đã Có Tài Khoản Chưa ?</h4>
+                    <P>Hãy Đăng Ký Tài Khoản Để Đăng Sản Phẩm Nhé</P>
+                </div>
+                @if (TempData["ThongBao"] != null)
+                {
+                    <div class="alert alert-info" role="alert">
+                        @TempData["ThongBao"]
+                    </div>
+                }
+                <div class="search-area contact-2">
+                    <div class="search-area-inner">
+                        <div class="search-contents ">
+                            <form asp-action="ThemSanPham" asp-controller="SanPhams" method="POST" enctype="multipart/form-data">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="row mb-30">
+                                    <h3 class="heading-3">Thông tin bắt buộc</h3>
+                                    <div class="col-lg-12">
+                                        <div class="form-group message">
+                                            <label asp-for="ThemSanPham.TieuDeSanpham" class="control-label">Tiêu Đề</label>
+                                            <input asp-for="ThemSanPham.TieuDeSanpham" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.TieuDeSanpham" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group message">
+                                            <label asp-for="ThemSanPham.MoTaSanpham" class="control-label">Mô Tả Sản Phẩm</label>
+                                            <textarea asp-for="ThemSanPham.MoTaSanpham" class="form-control"></textarea>
+                                            <span asp-validation-for="ThemSanPham.MoTaSanpham" class="text-danger"></span>
+                                            <i class="flaticon-mail-2"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Loại Tin</label>
+                                            <select asp-for="SelectedLoaiTin" class="selectpicker search-fields" name="SelectedLoaiTin">
+                                                <option value="">--------------------------- Tất Cả -------------------</option>
+                                                @foreach (var loaiTin in Model.loaiTins)
+                                                {
+                                                    <option value="@loaiTin.IdLoaitin">@loaiTin.TenLoaitin</option>
+                                                }
+                                            </select>
+                                            <span asp-validation-for="SelectedLoaiTin" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Loại Bất Động Sản</label>
+                                            <select asp-for="SelectedLoaiBds" class="selectpicker search-fields" name="SelectedLoaiBds">
+                                                <option value="">--------------------------- Tất Cả -------------------</option>
+                                                @foreach (var loaiBDS in Model.loaiBds)
+                                                {
+                                                    <option value="@loaiBDS.IdLoaibds">@loaiBDS.TenLoaibds</option>
+                                                }
+                                            </select>
+                                            <span asp-validation-for="SelectedLoaiBds" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Tỉnh Thành</label>
+                                             <select asp-for="SelectedTinhThanhs" class="selectpicker search-fields" name="SelectedTinhThanhs"> 
+                                                 <option value="">--------------------------- Tất Cả -------------------</option> 
+                                                 @foreach (var loaiTinhThanh in Model.tinhThanhs) 
+                                                 { 
+                                                     <option value="@loaiTinhThanh.IdTinhthanh">@loaiTinhThanh.TenTinhthanh</option> 
+                                                 } 
+                                             </select> 
+                                             <span asp-validation-for="SelectedTinhThanhs" class="text-danger"></span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Quận/huyện</label>
+                                             <select asp-for="SelectedQuanHuyens" class="selectpicker search-fields" name="SelectedQuanHuyens"> 
+                                                 <option value="">--------------------------- Tất Cả -------------------</option> 
+                                                 @foreach (var loaiQuanHuyen in Model.quanHuyens) 
+                                                 { 
+                                                     <option value="@loaiQuanHuyen.IdQuanhuyen">@loaiQuanHuyen.TenQuanhuyen</option> 
+                                                 } 
+                                             </select> 
+                                             <span asp-validation-for="SelectedQuanHuyens" class="text-danger"></span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Phường xã</label>
+                                             <select asp-for="SelectedPhuongXas" class="selectpicker search-fields" name="SelectedPhuongXas"> 
+                                                 <option value="">--------------------------- Tất Cả -------------------</option> 
+                                                 @foreach (var loaiPhuongXa in Model.phuongXas) 
+                                                 { 
+                                                     <option value="@loaiPhuongXa.IdPhuongxa">@loaiPhuongXa.TenPhuongxa</option> 
+                                                 } 
+                                             </select> 
+                                             <span asp-validation-for="SelectedPhuongXas" class="text-danger"></span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Đường Phố</label>
+                                             <select asp-for="SelectedDuongPhos" class="selectpicker search-fields" name="SelectedDuongPhos"> 
+                                                <option value="">--------------------------- Tất Cả -------------------</option> 
+                                                 @foreach (var loaiDuongpho in Model.duongPhos) 
+                                                 { 
+                                                     <option value="@loaiDuongpho.IdDuongpho">@loaiDuongpho.TenDuongpho</option> 
+                                                 } 
+                                             </select> 
+                                            <span asp-validation-for="SelectedDuongPhos" class="text-danger"></span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.DiaChi" class="control-label">Địa Chỉ Chi Tiết</label>
+                                            <input asp-for="ThemSanPham.DiaChi" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.DiaChi" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.DienTich" class="control-label">Diện Tích</label>
+                                            <input asp-for="ThemSanPham.DienTich" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.DienTich" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.GiaSanPham" class="control-label">Giá Tiền</label>
+                                            <input asp-for="ThemSanPham.GiaSanPham" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.GiaSanPham" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="heading-3">Thông tin Khác </h3>
+                                <div class="row mb-30">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.Chieungang" class="control-label">Chiều Ngang</label>
+                                            <input asp-for="ThemSanPham.Chieungang" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.Chieungang" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.Chieudai" class="control-label">Chiều Dài</label>
+                                            <input asp-for="ThemSanPham.Chieudai" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.Chieudai" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.SoLau" class="control-label">Số lầu</label>
+                                            <input asp-for="ThemSanPham.SoLau" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.SoLau" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ThemSanPham.SoPhongNgu" class="control-label">Số Phòng Ngủ</label>
+                                            <input asp-for="ThemSanPham.SoPhongNgu" class="form-control" />
+                                            <span asp-validation-for="ThemSanPham.SoPhongNgu" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Phương Hướng</label>
+                                            <select asp-for="SelectedPhuongHuongs" class="selectpicker search-fields" name="SelectedPhuongHuongs">
+                                                <option value="">--------------------------- Tất Cả -------------------</option>
+                                                @foreach (var loaiphuongHuong in Model.phuongHuongs)
+                                                {
+                                                    <option value="@loaiphuongHuong.IdPhuonghuong">@loaiphuongHuong.TenPhuonghuong</option>
+                                                }
+                                            </select>
+                                            <span asp-validation-for="SelectedPhuongHuongs" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Pháp lý(giayto_tailieu)</label>
+                                            <select asp-for="SelectedTailieu" class="selectpicker search-fields" name="SelectedTailieu">
+                                                <option value="">--------------------------- Tất Cả -------------------</option>
+                                                @foreach (var loaigiayToTaiLieu in Model.giayToTaiLieus)
+                                                {
+                                                    <option value="@loaigiayToTaiLieu.IdGiaytoTailieu">@loaigiayToTaiLieu.TenGiaytoTailieu</option>
+                                                }
+                                            </select>
+                                            <span asp-validation-for="SelectedTailieu" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <div class="form-check checkbox-theme">
+                                                <input class="form-check-input" asp-for="PhongAn" id="phong-an" />
+                                                <label class="form-check-label" for="phong-an">Phòng Ăn</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check checkbox-theme">
+                                                <input class="form-check-input" asp-for="NhaBep" id="nha-bep" />
+                                                <label class="form-check-label" for="nha-bep">Nhà Bếp</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check checkbox-theme">
+                                                <input class="form-check-input" asp-for="SanThuong" id="san-thuong" />
+                                                <label class="form-check-label" for="san-thuong">Sân Thượng</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <div class="form-check checkbox-theme">
+                                                <input class="form-check-input" asp-for="ChoDeXeHoi" id="cho-de-xe-hoi" />
+                                                <label class="form-check-label" for="cho-de-xe-hoi">Chỗ để Xe Hơi</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Input để tải lên tối đa 5 ảnh -->
+                                <h3 class="heading-3">Hình ảnh</h3>
+                                <div class="row mb-45">
+                                    <div class="col-lg-12">
+                                        <!-- Giao diện Dropzone -->
+                                        <div id="myDropZone" class="dropzone dropzone-design">
+                                            <!-- Vùng để hiển thị ảnh xem trước -->
+                                            <div id="previewContainer" class="d-flex flex-wrap gap-3"></div>
+                                            <div class="dz-default dz-message">
+                                                <span>Thả file tại đây hoặc nhấn để chọn</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Input ASP.NET Core để tải lên tối đa 5 ảnh -->
+                                        <input type="file" asp-for="HinhAnhs" class="form-control d-none" id="fileUpload" multiple accept="image/*" />
+                                        <span asp-validation-for="HinhAnhs" class="text-danger"></span>
+                                        <small class="form-text text-muted">
+                                            Chỉ chấp nhận định dạng JPG, PNG. Bạn có thể tải lên tối đa 5 ảnh.
+                                        </small>
+                                    </div>
+                                </div>
+                                <!-- Hiển thị nút submit -->
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-4">Thêm Sản Phẩm</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Script xử lý giao diện Dropzone -->
+<script>
+    document.getElementById("myDropZone").addEventListener("click", function () {
+        document.getElementById("fileUpload").click(); // Mở input ASP.NET Core
+    });
+
+    document.getElementById("fileUpload").addEventListener("change", function () {
+        const files = this.files;
+        const previewContainer = document.getElementById("previewContainer");
+        previewContainer.innerHTML = ""; // Xóa các ảnh cũ
+
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+
+            // Tạo FileReader để đọc file
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                // Tạo container cho từng ảnh
+                const imgContainer = document.createElement("div");
+                imgContainer.style.position = "relative";
+                imgContainer.style.display = "inline-block";
+
+                // Tạo thẻ img để hiển thị ảnh
+                const img = document.createElement("img");
+                img.src = e.target.result; // URL ảnh
+                img.alt = file.name;
+                img.style.width = "100px";
+                img.style.height = "100px";
+                img.style.objectFit = "cover";
+                img.style.border = "1px solid #ddd";
+                img.style.borderRadius = "5px";
+
+                // Tạo nút xóa
+                const removeBtn = document.createElement("button");
+                removeBtn.innerHTML = "&times;";
+                removeBtn.style.position = "absolute";
+                removeBtn.style.top = "5px";
+                removeBtn.style.right = "5px";
+                removeBtn.style.background = "rgba(255,255,255,0.7)";
+                removeBtn.style.border = "none";
+                removeBtn.style.color = "red";
+                removeBtn.style.fontWeight = "bold";
+                removeBtn.style.cursor = "pointer";
+                removeBtn.style.borderRadius = "50%";
+                removeBtn.style.padding = "2px 5px";
+
+                // Xử lý sự kiện xóa
+                removeBtn.addEventListener("click", function () {
+                    imgContainer.remove();
+                });
+
+                // Gắn img và nút xóa vào container
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(removeBtn);
+
+                // Gắn container vào preview
+                previewContainer.appendChild(imgContainer);
+            };
+
+            // Đọc file dưới dạng URL data
+            reader.readAsDataURL(file);
+        }
+    });
+
+   
+
+
+</script>
+
+
+<style>
+    .dropzone-design {
+        border: 2px dashed #ccc;
+        padding: 20px;
+        text-align: center;
+        background: #f9f9f9;
+        border-radius: 10px;
+        min-height: 150px;
+        position: relative;
+    }
+
+        .dropzone-design .dz-default.dz-message {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+    #previewContainer img {
+        transition: transform 0.2s ease;
+    }
+
+        #previewContainer img:hover {
+            transform: scale(1.1);
+        }
+</style>

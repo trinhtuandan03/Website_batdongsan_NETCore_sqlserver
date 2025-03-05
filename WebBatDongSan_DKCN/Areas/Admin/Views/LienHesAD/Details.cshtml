@@ -1,0 +1,75 @@
+﻿@model WebBatDongSan_DKCN.Models.LienHe
+
+@{
+    ViewData["Title"] = "Chi Tiết Liên Hệ";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Thông Tin Chi Tiết Liên Hệ</h2>
+                <p class="pageheader-text">
+                    Đây là thông tin chi tiết của liên hệ, bao gồm tiêu đề, nội dung, thời gian gửi, và thông tin người liên hệ.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Liên Hệ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Liên Hệ</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Liên Hệ</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tiêu Đề -->
+                        <dt class="col-sm-3">Tiêu Đề:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TieuDe)</dd>
+
+                        <!-- Nội Dung -->
+                        <dt class="col-sm-3">Nội Dung:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NoiDung)</dd>
+
+                        <!-- Thời Gian Gửi -->
+                        <dt class="col-sm-3">Thời Gian Gửi:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.ThoiGianGui)</dd>
+
+                        <!-- Họ Tên -->
+                        <dt class="col-sm-3">Họ Tên:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.HoTen)</dd>
+
+                        <!-- Email -->
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+                        <!-- Người Dùng -->
+                        <dt class="col-sm-3">Người Dùng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdUserNavigation.IdUser)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdLienHe" class="btn btn-primary">Sửa Liên Hệ</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

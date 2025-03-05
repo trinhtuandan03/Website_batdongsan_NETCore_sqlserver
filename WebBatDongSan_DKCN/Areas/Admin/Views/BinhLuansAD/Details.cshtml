@@ -1,0 +1,71 @@
+﻿@model WebBatDongSan_DKCN.Models.BinhLuan
+
+@{
+    ViewData["Title"] = "Chi Tiết Bình Luận";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Chi Tiết Bình Luận</h2>
+                <p class="pageheader-text">
+                    Thông tin chi tiết về bình luậuận bao gồm nội dung, ngày tạo, người đăng và liên quan.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Bình Luậuận</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Bình Luận</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Chi Tiết Thông Tin Bình Luận</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Nội Dung -->
+                        <dt class="col-sm-3">Nội Dung:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NoiDung)</dd>
+
+                        <!-- Ngày Tạo -->
+                        <dt class="col-sm-3">Ngày Tạo:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayTao)</dd>
+
+                        <!-- Bài Viết -->
+                        <dt class="col-sm-3">Bài Viết:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdBaivietNavigation.TieuDe)</dd>
+
+                        <!-- Sản Phẩm -->
+                        <dt class="col-sm-3">Sản Phẩm:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdSanphamNavigation.TieuDeSanpham)</dd>
+
+                        <!-- Người Dùng -->
+                        <dt class="col-sm-3">Người Dùng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.IdUserNavigation.HoTen)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdBinhluan" class="btn btn-primary">Sửa Bình Luậuận</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+﻿@using System.Security.Claims
+
+<!-- Header start -->
+<header class="top-header th-bg" id="main-header-2">
+    <!-- Main header start -->
+    <header class="main-header sticky-header" id="main-header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light rounded">
+                        <button class="navbar-toggler" type="button" id="drawer">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav justify-content-center">            
+                                <!-------------------------------------------------------------------------------------->
+                                @if (Model.Menus != null)
+                                {
+                                    @foreach (var item in Model.Menus)
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/@item.Link">@item.Title</a>
+                                        </li>
+                                    }
+                                }
+                                <!-------------------------------------------------------------------------------------->
+                            </ul>
+                            <ul class="nav navbar-nav ml-auto justify-content-end">
+                                <li class="nav-item">
+                                    <a href="them-san-pham" class="submit-btn"> Gửi Sản Phẩm </a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav ml-auto justify-content-end">
+                                <li class="nav-item">
+                                    <a href="them-bai-viet" class="submit-btn"> Gửi Bài Viết </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main header end -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-7">
+                <div class="list-inline">
+                    <a href="tel:1-7X0-555-8X22"><i class="fa fa-phone"></i>+0336 656 538</a>
+                    <a href="mailto:info@DanKhanh.com"><i class="fa fa-envelope"></i>info@DanKhanh.com</a>
+                    <a href="#" class="mr-0 d-none-992"><i class="fa fa-clock-o"></i>Thứ Hai - Chủ Nhật: 8:00am - 6:00pm</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5">
+                <ul class="top-social-media pull-right">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        // Lấy TenTruyCap từ ClaimTypes  new Claim(ClaimTypes.Name, user.TenTruyCap), của LienHeControllers.cs
+                        var hoTen = User.FindFirst(ClaimTypes.Name)?.Value;
+                        var LoaiTaiKhoanId = User.FindFirst(ClaimTypes.Role)?.Value;
+                        var soTien = User.FindFirst("SoTien")?.Value ?? "0"; // Lấy SoTien từ Claim
+
+                        // Chuyển đổi SoTien thành decimal và định dạng theo kiểu tiền tệ
+                        var soTienFormatted = decimal.TryParse(soTien, out decimal result)
+                        ? result.ToString("N0") // Định dạng tiền tệ: 20,000
+                        : "0";
+
+                        @if (LoaiTaiKhoanId == "3")
+                        {
+                            <li>
+                                <a href="/Admin"><span class="glyphicon glyphicon-cog"></span></a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="#"><span></span>@soTienFormatted VND</a>
+                            </li>
+                        }
+                        <li class="dropdown">
+                            <a href="thong-tin">
+                                <span class="glyphicon glyphicon-user"></span>
+                                @hoTen
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="dropdown-item" href="/NguoiDungs/ThongTinNguoiDung" style="color: black;">Thông Tin Tài Khoản</a></li>
+                                <li><a class="dropdown-item" href="/DSBaiVietSanPham/DanhSachBaiVietUser" style="color: black;">Quản Lý Sản Phẩm/ Bài Viết</a></li>
+                                <li><a class="dropdown-item" href="/LichSuGiaoDiches/DanhSachLichSuGiaoDich" style="color: black;">Lịch Sử Thanh Toán</a></li>
+                                <li><a class="dropdown-item" href="/ThongTinGiaoDichNapTiens/DanhSachLichSuNapTien" style="color: black;">Lịch Sử Nạp Tiền</a></li>
+                                <li><a class="dropdown-item" href="/Home/CreatePaymentUrl" style="color: black;">Nạp Tiền</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="dang-xuat" class="sign-in"><i class="fa fa-sign-out"></i> Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="dang-ky" class="sign-in"><i class="fa fa-user"></i> Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href="dang-nhap" class="sign-in"><i class="fa fa-sign-in"></i> Đăng nhập</a>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+

@@ -1,0 +1,55 @@
+﻿@model WebBatDongSan_DKCN.Models.PhuongHuong
+
+@{
+    ViewData["Title"] = "Thông Tin Chi Tiết Phương Hướng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Thông Tin Chi Tiết Phương Hướng</h2>
+                <p class="pageheader-text">
+                    Đây là thông tin chi tiết về phương hướng bất động sản.
+                </p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Phương Hướng</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi Tiết Phương Hướng</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Phương Hướng</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Tên Phương Hướng -->
+                        <dt class="col-sm-3">Tên Phương Hướng:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenPhuonghuong)</dd>
+                    </dl>
+                </div>
+                <!-- Nút Thao Tác -->
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.IdPhuonghuong" class="btn btn-primary">Sửa Phương Hướng</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<WebBatDongSan_DKCN.Models.PhuongHuong>
+
+@{
+    ViewData["Title"] = "Danh Sách Phương Hướng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- wrapper  -->
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h1 class="pageheader-title">Danh Sách Phương Hướng</h1>
+                <p class="pageheader-text">Quản lý phương hướng bất động sản.</p>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#" class="breadcrumb-link">Quản Lý Phương Hướng</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh Sách Phương Hướng</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <!-- ============================================================== -->
+        <!-- basic table  -->
+        <!-- ============================================================== -->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <p>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a asp-action="Create" class="btn btn-primary">Thêm Mới Phương Hướng</a>
+                    </div>
+                </p>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered first">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.TenPhuonghuong)
+                                    </th>
+                                    <th class="text-center">
+                                        Chức Năng
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.TenPhuonghuong)</td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <a asp-action="Edit" asp-route-id="@item.IdPhuonghuong" class="btn btn-sm btn-outline-light" style="background-color: #0088cc; color: white;">Edit</a>
+                                                <a asp-action="Details" asp-route-id="@item.IdPhuonghuong" class="btn btn-sm btn-outline-light" style="background-color: #58AD69; color: white;">Details</a>
+                                                <a asp-action="Delete" asp-route-id="@item.IdPhuonghuong" class="btn btn-sm btn-outline-light" style="background-color: #FF5A5F; color: white;">Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end basic table  -->
+        <!-- ============================================================== -->
+    </div>
+</div>

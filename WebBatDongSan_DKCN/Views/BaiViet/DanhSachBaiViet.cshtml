@@ -1,0 +1,49 @@
+﻿@model WebBatDongSan_DKCN.ViewModels.BaiVietsViewModels
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Danh Sách Bài Viết</h1>
+            <ul class="breadcrumbs">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active">Danh Sách Bài Viết</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Blog section start -->
+<div class="blog-section content-area-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                @foreach (var BaiViet in Model.BaiViets)
+                {
+                    <div class="blog-5">
+                        <div class="blog-image">
+                            <div class="date-box">
+                                <span>@BaiViet.NgayTao?.ToString("dd")</span>@BaiViet.NgayTao?.ToString("MMM")
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h3>
+                                <a href="@Url.Action("ChiTietBaiViet", "BaiViet", new { id = BaiViet.IdBaiviet })">@BaiViet.TieuDe</a>
+                            </h3>
+                            <p>@BaiViet.NoiDung</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog section end -->
+
+

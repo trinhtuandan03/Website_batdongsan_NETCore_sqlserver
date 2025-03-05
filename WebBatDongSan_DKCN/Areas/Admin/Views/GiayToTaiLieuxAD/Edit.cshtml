@@ -1,0 +1,67 @@
+﻿@model WebBatDongSan_DKCN.Models.GiayToTaiLieu
+
+@{
+    ViewData["Title"] = "Chỉnh Sửa Giấy Tờ Tài Liệu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid dashboard-content">
+    <!-- ============================================================== -->
+    <!-- pageheader -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+                <h2 class="pageheader-title">Chỉnh Sửa Giấy Tờ Tài Liệu</h2>
+                <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" class="breadcrumb-link">Quản Lý Giấy Tờ Tài Liệu</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chỉnh Sửa Giấy Tờ Tài Liệu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end pageheader -->
+    <!-- ============================================================== -->
+
+    <div class="row">
+        <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card">
+                <div class="card-header p-4">
+                    <h4 class="mb-0">Thông Tin Giấy Tờ Tài Liệu</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <!-- Hidden field to store the ID -->
+                        <input type="hidden" asp-for="IdGiaytoTailieu" />
+
+                        <!-- Tên Giấy Tờ Tài Liệu -->
+                        <div class="form-group row">
+                            <label asp-for="TenGiaytoTailieu" class="col-12 col-sm-3 col-form-label text-sm-right">Tên Giấy Tờ</label>
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <input asp-for="TenGiaytoTailieu" class="form-control" placeholder="Nhập tên giấy tờ tài liệu" />
+                                <span asp-validation-for="TenGiaytoTailieu" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Nút Thao Tác -->
+                        <div class="form-group row text-right">
+                            <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-3">
+                                <input type="submit" value="Lưu" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
